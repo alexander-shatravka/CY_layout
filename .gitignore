@@ -1,0 +1,34 @@
+# Netbeans
+nbproject/
+
+# ISP Manager
+webstat/
+
+# nodeJS
+node_modules/
+
+# PHPStorm
+.idea/
+
+# Mercurial
+.hg
+
+# SVN
+.svn
+
+# Linux
+*~
+
+# Mac
+.DS_Store
+
+*.db
+*.cache
+
+*.log
+.htaccess
+sitemap.xml
+sitemap.xml.gz
+
+cache/
+assets/
