@@ -4015,6 +4015,7 @@ main {
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
+		bottom: 30px;
 
 		@include media("<widescreen") {
 			position: static;
@@ -4061,6 +4062,7 @@ main {
 		float: left;
 		max-width: 370px;
 		margin: 0 auto;
+		margin-right: 30px;
 
 		@include media("<tablet") {
 			float: none;
@@ -4341,6 +4343,7 @@ main {
 		align-content: center;
 		align-items: center;
 		justify-content: space-between;
+		height: 100px;
 
 		@include media("<900px") {
 			top: 5px;

@@ -168,79 +168,21 @@
 							<h2>1 Создайте личный кабинет</h2>
 						</div>
 						<ul class="progress-bar">
-							<li class="active">1 <span class="step-descr">
-									+100
-								</span></li>
-							<li>2 <span class="step-descr">
-									+200
-								</span></li>
+							<li class="active">1 </li>
+							<li>2 </li>
 
-							<li>3 <span class="step-descr">
-									+250
-								</span></li>
+							<li>3 </li>
 
-							<li>4 <span class="step-descr">
-									+250
-								</span></li>
+							<li>4 </li>
 
-							<li>5 <span class="step-descr">
-									+1200
-								</span></li>
+							<li>5 </li>
 
-							<li>6 <span class="step-descr">
-								</span></li>
-
-
-							<li class="bonuses">
-								<div class="bonuses-text"><span>Бонусы</span><b>0</b></div>
-								<svg>
-									<style>
-										.st0 {
-											stroke-miterlimit: 5;
-											-moz-transform: rotate(-90deg);
-											/* Для Firefox */
-											-ms-transform: rotate(-90deg);
-											/* Для IE */
-											-webkit-transform: rotate(-90deg);
-											/* Для Safari, Chrome, iOS */
-											-o-transform: rotate(-90deg);
-											/* Для Opera */
-											transform: rotate(-90deg);
-										}
-
-										.st0 {
-											stroke-dasharray: 1000;
-											stroke-dashoffset: 1000;
-											animation: dash 7s linear forwards;
-										}
-
-										@keyframes dash {
-											from {
-												stroke-dashoffset: 1000;
-											}
-
-											to {
-												stroke-dashoffset: 0;
-											}
-										}
-									</style>
-									<circle class="big" cy=50 cx=50 r=45 fill=transparent stroke="#ccc"
-										stroke-width="8"></circle>
-									<circle class="big st0" cy=50 cx=-50 r=45 fill=transparent stroke="#ff6200"
-										stroke-width="8" stroke-dasharray="100, 500" stroke-dashoffset=0></circle>
-									<circle class="small" cy=35 cx=35 r=30 fill=transparent stroke="#ccc"
-										stroke-width="8"></circle>
-									<circle class="small st0" cy=35 cx=-35 r=30 fill=transparent stroke="#ff6200"
-										stroke-width="8" stroke-dasharray="100, 500" stroke-dashoffset=0></circle>
-								</svg>
-							</li>
+							<li>6 </li>
 						</ul>
 					</div>
 					<div class="credit-details-holder">
 						<ul class="info-columns">
 							<li><span>К возврату</span><span class="bold-orange">1126<span
-										class="small">грн</span></span></li>
-							<li><span>С учетом бонусов</span><span class="bold-light-orange">1126<span
 										class="small">грн</span></span></li>
 						</ul>
 					</div>
@@ -323,38 +265,6 @@
 										</div>
 										<div class="form-row">
 											<div class="label-block">
-												<label for="registration_create_an_account_form_phone" class="required">
-													Номер телефона
-													<span class="req">*</span>
-												</label>
-												<div class="popup-block"><span class="popup-opener" href="#"> <i
-															class="icon-question"></i></span>
-													<div class="popup">
-														<p>Для перехода на следующий шаг верифицируйте номер телефона.
-															Укажите Ваш номер телефона. Нажмите на кнопку
-															&quot;Подтвердить&quot; и в появившееся окно введите код,
-															который пришел в CMC
-														</p>
-													</div>
-												</div>
-											</div>
-											<div class="input-holder">
-												<a href="#check-phone"
-													class="button check-button js-check-phone disabled"
-													data-verified="[&quot;380955838911&quot;]"
-													data-text-sending="Подождите..." data-text-error="Ошибка"
-													data-text-verified="Подтвержден"
-													data-send-url="/ru/verify-phone/send-code/">Подтвердить</a>
-												<input type="tel" id="registration_create_an_account_form_phone"
-													name="registration_create_an_account_form[phone]"
-													required="required" data-rule-phoneValidate="1"
-													data-rule-phoneVerified="1" placeholder="+38 (___) ___-__-__"
-													data-mask="+38 (099) 999-99-99" minlength="19" maxlength="19" />
-											</div>
-
-										</div>
-										<div class="form-row">
-											<div class="label-block">
 												<label for="registration_create_an_account_form_email_first"
 													class="required">
 													E-mail
@@ -370,72 +280,6 @@
 												id="registration_create_an_account_form_email_first"
 												name="registration_create_an_account_form[email][first]"
 												required="required" />
-										</div>
-										<div class="form-row">
-											<div class="label-block">
-												<label for="registration_create_an_account_form_email_second"
-													class="required">
-													Повторите E-mail
-													<span class="req">*</span>
-												</label>
-												<div class="popup-block"><span class="popup-opener" href="#"> <i
-															class="icon-question"></i></span>
-													<div class="popup">
-														<p>Повторите ваш e-mail ручним вводом</p>
-													</div>
-												</div>
-											</div><input type="email"
-												id="registration_create_an_account_form_email_second"
-												name="registration_create_an_account_form[email][second]"
-												required="required"
-												data-rule-equalTo="#registration_create_an_account_form_email_first"
-												onpaste="return false;" />
-										</div>
-									</div>
-									<div class="column">
-										<div class="form-row">
-											<div class="label-block">
-												<label for="registration_create_an_account_form_secretQuestion"
-													class="required">
-													Секретный вопрос
-													<span class="req">*</span>
-												</label>
-												<div class="popup-block"><span class="popup-opener" href="#"> <i
-															class="icon-question"></i></span>
-													<div class="popup">
-														<p>Укажите секретный вопрос</p>
-													</div>
-												</div>
-											</div><select id="registration_create_an_account_form_secretQuestion"
-												name="registration_create_an_account_form[secretQuestion]"
-												required="required">
-												<option value="" selected="selected">Выберите вариант</option>
-												<option value="1">Какое прозвище у вас было в детстве?</option>
-												<option value="2">Какое отчество у вашей мамы?</option>
-												<option value="3">В каком городе проживает ваш ближайший родственник?
-												</option>
-												<option value="4">В каком году вы закончили университет?</option>
-												<option value="5">Какие 5 последних чисел у вашей кредитной карточки?
-												</option>
-											</select>
-										</div>
-										<div class="form-row">
-											<div class="label-block">
-												<label for="registration_create_an_account_form_secretAnswer"
-													class="required">
-													Ответ на секретный вопрос
-													<span class="req">*</span>
-												</label>
-												<div class="popup-block"><span class="popup-opener" href="#"> <i
-															class="icon-question"></i></span>
-													<div class="popup">
-														<p>Укажите ответ на секретный вопрос</p>
-													</div>
-												</div>
-											</div><input type="text"
-												id="registration_create_an_account_form_secretAnswer"
-												name="registration_create_an_account_form[secretAnswer]"
-												required="required" data-rule-notSpaces="1" />
 										</div>
 										<div class="form-row">
 											<div class="label-block">
@@ -482,7 +326,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="agree-checkbox-holder">
+								<div class="agree-checkbox-holder column">
 									<label for="remember">
 										<input type="checkbox" id="remember" name="_remember_me" class="agree-checkbox"
 											data-rule-required="1">
@@ -490,6 +334,13 @@
 										займа ознакомлен, и подтверждаю <a target="_blank"
 											href="/ru/agreementpersonaldata/">согласие</a> на обработку своих
 										персональных данных, а также на передачу данных у бюро кредитных историй.
+									</label>
+								</div>
+								<div class="agree-checkbox-holder column">
+									<label for="remember">
+										<input type="checkbox" id="remember" name="_remember_me" class="agree-checkbox"
+											data-rule-required="1">
+										Cогласен на рекламу
 									</label>
 								</div>
 								<div class="button-block"><a class="button btn-validate" href="#"
