@@ -18,9 +18,9 @@ $(document).ready(function() {
 	updateSliderValues();
 	// initFixedHeader();
 	initpasswordShow();
-	registerValidationRules();
+	// registerValidationRules();
 	//validationSteps();
-	validationStepsNew();
+	// validationStepsNew();
 	initAutocomplete();
 	initCreditCardField();
 	initAjaxUploader();
@@ -33,7 +33,7 @@ $(document).ready(function() {
 	initInlineFormEditing();
 	initShowIfValue();
 	changeCursorPosition();
-	initFormsValidation();
+	// initFormsValidation();	
 	checkPhone();
 	initBanksTabs();
 	initClickOnDomReady();

@@ -109,7 +109,7 @@
 					</div>
 					<div class="progress-holder">
 						<div class="heading-block">
-							<h2>4 Финансовое состояние</h2>
+							<h2>4 Финансовое положение</h2>
 						</div>
 						<ul class="progress-bar">
 							<li class="active passed">1 <span class="step-descr"></span></li>
@@ -118,66 +118,16 @@
 
 							<li class="active passed">3 <span class="step-descr"></span></li>
 
-							<li class="active">4 <span class="step-descr">
-								</span></li>
-							<li>5 <span class="step-descr">
-									+1200
-								</span></li>
+							<li class="active">4 <span class="step-descr"></span></li>
 
-							<li>6 <span class="step-descr">
-								</span></li>
+							<li>5 </li>
 
-
-							<li class="bonuses">
-								<div class="bonuses-text"><span>Бонусы</span><b>800</b></div>
-								<svg>
-									<style>
-										.st0 {
-											stroke-miterlimit: 5;
-											-moz-transform: rotate(-90deg);
-											/* Для Firefox */
-											-ms-transform: rotate(-90deg);
-											/* Для IE */
-											-webkit-transform: rotate(-90deg);
-											/* Для Safari, Chrome, iOS */
-											-o-transform: rotate(-90deg);
-											/* Для Opera */
-											transform: rotate(-90deg);
-										}
-
-										.st0 {
-											stroke-dasharray: 1000;
-											stroke-dashoffset: 1000;
-											animation: dash 7s linear forwards;
-										}
-
-										@keyframes dash {
-											from {
-												stroke-dashoffset: 1000;
-											}
-
-											to {
-												stroke-dashoffset: 0;
-											}
-										}
-									</style>
-									<circle class="big" cy=50 cx=50 r=45 fill=transparent stroke="#ccc"
-										stroke-width="8"></circle>
-									<circle class="big st0" cy=50 cx=-50 r=45 fill=transparent stroke="#ff6200"
-										stroke-width="8" stroke-dasharray="100, 500" stroke-dashoffset=0></circle>
-									<circle class="small" cy=35 cx=35 r=30 fill=transparent stroke="#ccc"
-										stroke-width="8"></circle>
-									<circle class="small st0" cy=35 cx=-35 r=30 fill=transparent stroke="#ff6200"
-										stroke-width="8" stroke-dasharray="100, 500" stroke-dashoffset=0></circle>
-								</svg>
-							</li>
+							<li>6 </li>
 						</ul>
 					</div>
 					<div class="credit-details-holder">
 						<ul class="info-columns">
 							<li><span>К возврату</span><span class="bold-orange">1126<span
-										class="small">грн</span></span></li>
-							<li><span>С учетом бонусов</span><span class="bold-light-orange">1118<span
 										class="small">грн</span></span></li>
 						</ul>
 					</div>
@@ -220,6 +170,27 @@
 												<option value="5">Пенсионер</option>
 											</select>
 										</div>
+										<div class="form-row">
+											<div class="label-block">
+												<label for="registration_next_income_date"
+													class="required">
+													Дата следующей заработной платы
+													<span class="req">*</span>
+												</label>
+												<div class="popup-block"><span class="popup-opener" href="#"> <i
+															class="icon-question"></i></span>
+													<div class="popup">
+														<p>Укажите дату следующей заработной платы
+														</p>
+													</div>
+												</div>
+											</div>
+											<span class="date-holder"><span class="icon-calendar ui-datepicker-trigger"></span><input type="text"
+												class="datepicker" id="registration_next_income_date"
+												name="registration_next_income_date"
+												required="required" placeholder="дд.мм.гггг" data-mindays="7" data-maxdays="30">
+											</span>
+										</div>
 										<div data-show-if-field="#registration_finance_state_form_incomeType"
 											data-show-if-value="1|3">
 											<div class="form-row">
@@ -240,6 +211,63 @@
 													id="registration_finance_state_form_companyName"
 													name="registration_finance_state_form[companyName]"
 													required="required" value="Інше" />
+											</div>
+											<div data-show-if-field="#registration_finance_state_form_incomeType"
+												data-show-if-value="1|3">
+												<div class="form-row">
+													<div class="label-block">
+														<label for="registration_finance_state_form_businessType"
+															class="required">
+															Вид деятельности
+															<span class="req">*</span>
+														</label>
+														<div class="popup-block"><span class="popup-opener" href="#"> <i
+																	class="icon-question"></i></span>
+															<div class="popup">
+																<p>Укажите Ваш вид деятельности
+																</p>
+															</div>
+														</div>
+													</div><select id="registration_finance_state_form_businessType"
+														name="registration_finance_state_form[businessType]"
+														required="required">
+														<option value="">Выберите вариант</option>
+														<option value="1">Оптовая и посредническая торговля</option>
+														<option value="2">Риелторская деятельность</option>
+														<option value="3">Розничная торговля</option>
+														<option value="4">Транспорт и связь</option>
+														<option value="5"> Информационные сервисы, телекоммуникации</option>
+														<option value="6">Сельское хозяйство</option>
+														<option value="7">Легкая и пищевая промышленность</option>
+														<option value="8">Общественное питание, рестораны</option>
+														<option value="9">Финансы, банковское дело, страхование</option>
+														<option value="10">Машиностроение, металооброботка</option>
+														<option value="11">Химия, парфюмерия, фармацевтика</option>
+														<option value="12">Образование</option>
+														<option value="13">Охрана здоровья</option>
+														<option value="14">Культура</option>
+														<option value="15">Наука</option>
+														<option value="16">Юридические, нотариальные услуги</option>
+														<option value="17">Приватное детективное / охранное агенство
+														</option>
+														<option value="18">Развлекательный, игровой, шоу-бизнес</option>
+														<option value="19">Аудит консалтинг</option>
+														<option value="20">Разработка</option>
+														<option value="21">Строительство</option>
+														<option value="22">Производство стройматериалов</option>
+														<option value="23">Добыча полезных ископаемых, кроме ТЭК</option>
+														<option value="24">Добыча ТЭК полезных ископаемых</option>
+														<option value="25">Комунальное хозяйство</option>
+														<option value="26">Органы государственного или регионального
+															управления</option>
+														<option value="27">Вооруженные силы</option>
+														<option value="28">Правоохранительные органы, таможня, налоговая
+															полиция</option>
+														<option value="29">СМИ, реклама, PR-агенства</option>
+														<option value="30">Издательская деятельность</option>
+														<option value="31" selected="selected">Другое</option>
+													</select>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -267,6 +295,27 @@
 												<option value="3">До 8000</option>
 												<option value="4">До 15000</option>
 												<option value="5">Больше 15000</option>
+											</select>
+										</div>
+										<div class="form-row">
+											<div class="label-block">
+												<label for="registration_finance_state_form_incomeType"
+													class="required">
+													Частота получения зароботной платы
+													<span class="req">*</span>
+												</label>
+												<div class="popup-block"><span class="popup-opener" href="#"> <i
+															class="icon-question"></i></span>
+													<div class="popup">
+														<p>Укажите тип Вашей текущей занятости
+														</p>
+													</div>
+												</div>
+											</div><select id="registration_finance_state_form_incomeType"
+												name="registration_finance_state_form[incomeType]" required="required">
+												<option value="" selected="selected">Выберите вариант</option>
+												<option value="1">1 раз в месяц</option>
+												<option value="2">2 раза в месяц</option>
 											</select>
 										</div>
 										<div data-show-if-field="#registration_finance_state_form_incomeType"
@@ -297,177 +346,26 @@
 													<option value="6">Вспомогательный персоналл</option>
 												</select>
 											</div>
-										</div>
-									</div>
-									<div class="column">
-										<div class="form-row">
-											<div class="label-block">
-												<label for="registration_finance_state_form_workPhone" class="required">
-													Служебный/дополнительный телефон
-													<span class="req">*</span>
-												</label>
-												<div class="popup-block"><span class="popup-opener" href="#"> <i
-															class="icon-question"></i></span>
-													<div class="popup">
-														<p>Укажите Ваш рабочий телефон</p>
-													</div>
-												</div>
-											</div><input type="tel" id="registration_finance_state_form_workPhone"
-												name="registration_finance_state_form[workPhone]" required="required"
-												data-rule-phoneValidate="1" placeholder="+38 (___) ___-__-__"
-												data-mask="+38 (099) 999-99-99" minlength="19" maxlength="19"
-												value="+38 (111) 111-11-11" />
-										</div>
-										<div data-show-if-field="#registration_finance_state_form_incomeType"
-											data-show-if-value="1|3">
 											<div class="form-row">
 												<div class="label-block">
-													<label for="registration_finance_state_form_businessType"
-														class="required">
-														Вид деятельности
+													<label for="registration_finance_state_form_workPhone" class="required">
+														Служебный/дополнительный телефон
 														<span class="req">*</span>
 													</label>
 													<div class="popup-block"><span class="popup-opener" href="#"> <i
 																class="icon-question"></i></span>
 														<div class="popup">
-															<p>Укажите Ваш вид деятельности
-															</p>
+															<p>Укажите Ваш рабочий телефон</p>
 														</div>
 													</div>
-												</div><select id="registration_finance_state_form_businessType"
-													name="registration_finance_state_form[businessType]"
-													required="required">
-													<option value="">Выберите вариант</option>
-													<option value="1">Оптовая и посредническая торговля</option>
-													<option value="2">Риелторская деятельность</option>
-													<option value="3">Розничная торговля</option>
-													<option value="4">Транспорт и связь</option>
-													<option value="5"> Информационные сервисы, телекоммуникации</option>
-													<option value="6">Сельское хозяйство</option>
-													<option value="7">Легкая и пищевая промышленность</option>
-													<option value="8">Общественное питание, рестораны</option>
-													<option value="9">Финансы, банковское дело, страхование</option>
-													<option value="10">Машиностроение, металооброботка</option>
-													<option value="11">Химия, парфюмерия, фармацевтика</option>
-													<option value="12">Образование</option>
-													<option value="13">Охрана здоровья</option>
-													<option value="14">Культура</option>
-													<option value="15">Наука</option>
-													<option value="16">Юридические, нотариальные услуги</option>
-													<option value="17">Приватное детективное / охранное агенство
-													</option>
-													<option value="18">Развлекательный, игровой, шоу-бизнес</option>
-													<option value="19">Аудит консалтинг</option>
-													<option value="20">Разработка</option>
-													<option value="21">Строительство</option>
-													<option value="22">Производство стройматериалов</option>
-													<option value="23">Добыча полезных ископаемых, кроме ТЭК</option>
-													<option value="24">Добыча ТЭК полезных ископаемых</option>
-													<option value="25">Комунальное хозяйство</option>
-													<option value="26">Органы государственного или регионального
-														управления</option>
-													<option value="27">Вооруженные силы</option>
-													<option value="28">Правоохранительные органы, таможня, налоговая
-														полиция</option>
-													<option value="29">СМИ, реклама, PR-агенства</option>
-													<option value="30">Издательская деятельность</option>
-													<option value="31" selected="selected">Другое</option>
-												</select>
+												</div><input type="tel" id="registration_finance_state_form_workPhone"
+													name="registration_finance_state_form[workPhone]" required="required"
+													data-rule-phoneValidate="1" placeholder="+38 (___) ___-__-__"
+													data-mask="+38 (099) 999-99-99" minlength="19" maxlength="19"
+													value="+38 (111) 111-11-11" />
 											</div>
 										</div>
 									</div>
-									<div class="column-hidden">
-										<div class="form-row">
-											<div class="label-block">
-												<label for="registration_finance_state_form_lastExperience"
-													class="required">
-													Стаж работы на последнем месте
-													<span class="req">*</span>
-												</label>
-												<div class="popup-block"><span class="popup-opener" href="#"> <i
-															class="icon-question"></i></span>
-													<div class="popup">
-														<p>Укажите Ваш стаж работы на последнем месте
-														</p>
-													</div>
-												</div>
-											</div><select id="registration_finance_state_form_lastExperience"
-												name="registration_finance_state_form[lastExperience]"
-												required="required">
-												<option value="">Выберите вариант</option>
-												<option value="1" selected="selected">от 0 до 2 лет включительно
-												</option>
-												<option value="2">больше 2 лет и до 4 лет включительно</option>
-												<option value="3">больше 4 лет и до 9 лет включительно</option>
-												<option value="4">больше 9 лет</option>
-											</select>
-										</div>
-										<div class="form-row">
-											<div class="label-block">
-												<label for="registration_finance_state_form_totalExperience"
-													class="required">
-													Общий стаж работы
-													<span class="req">*</span>
-												</label>
-												<div class="popup-block"><span class="popup-opener" href="#"> <i
-															class="icon-question"></i></span>
-													<div class="popup">
-														<p>Укажите общий стаж работы
-														</p>
-													</div>
-												</div>
-											</div><select id="registration_finance_state_form_totalExperience"
-												name="registration_finance_state_form[totalExperience]"
-												required="required">
-												<option value="">Выберите вариант</option>
-												<option value="1" selected="selected">от 0 до 2 лет включительно
-												</option>
-												<option value="2">больше 2 лет и до 4 лет включительно</option>
-												<option value="3">больше 4 лет и до 9 лет включительно</option>
-												<option value="4">больше 9 лет</option>
-											</select>
-										</div>
-										<div class="form-row">
-											<div class="label-block">
-												<label for="registration_finance_state_form_carOwner" class="required">
-													Владеете ли вы машиной?
-													<span class="req">*</span>
-												</label>
-												<div class="popup-block"><span class="popup-opener" href="#"> <i
-															class="icon-question"></i></span>
-													<div class="popup">
-														<p>Владете ли Вы автомобилем?
-														</p>
-													</div>
-												</div>
-											</div><select id="registration_finance_state_form_carOwner"
-												name="registration_finance_state_form[carOwner]">
-												<option value="1">Да</option>
-												<option value="2" selected="selected">Нет</option>
-											</select>
-										</div>
-										<div class="form-row">
-											<div class="label-block">
-												<label for="registration_finance_state_form_realEstateOwner"
-													class="required">
-													Владеете ли вы недвижимостью?
-													<span class="req">*</span>
-												</label>
-												<div class="popup-block"><span class="popup-opener" href="#"> <i
-															class="icon-question"></i></span>
-													<div class="popup">
-														<p>Владеете ли Вы недвижимостью?
-														</p>
-													</div>
-												</div>
-											</div><select id="registration_finance_state_form_realEstateOwner"
-												name="registration_finance_state_form[realEstateOwner]">
-												<option value="1">Да</option>
-												<option value="2" selected="selected">Нет</option>
-											</select>
-										</div>
-									</div>
-								</div>
 								<div class="button-block"><a class="button btn-light button-prev"
 										href="/ru/registration-new/address">Назад</a><a class="button btn-validate"
 										href="#" data-text-sending="Подождите..." data-text-error="Ошибка">Далее</a>

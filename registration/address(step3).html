@@ -109,75 +109,25 @@
 					</div>
 					<div class="progress-holder">
 						<div class="heading-block">
-							<h2>3 Адрес регистрации</h2>
+							<h2>3 Место проживания</h2>
 						</div>
 						<ul class="progress-bar">
 							<li class="active passed">1 <span class="step-descr"></span></li>
 
 							<li class="active passed">2 <span class="step-descr"></span></li>
 
-							<li class="active">3 <span class="step-descr">
-								</span></li>
-							<li class="active passed">4 <span class="step-descr"></span></li>
+							<li class="active">3 <span class="step-descr"></span></li>
 
-							<li>5 <span class="step-descr">
-									+1200
-								</span></li>
+							<li>4 <span class="step-descr"></span></li>
 
-							<li>6 <span class="step-descr">
-								</span></li>
+							<li>5 </li>
 
-
-							<li class="bonuses">
-								<div class="bonuses-text"><span>Бонусы</span><b>800</b></div>
-								<svg>
-									<style>
-										.st0 {
-											stroke-miterlimit: 5;
-											-moz-transform: rotate(-90deg);
-											/* Для Firefox */
-											-ms-transform: rotate(-90deg);
-											/* Для IE */
-											-webkit-transform: rotate(-90deg);
-											/* Для Safari, Chrome, iOS */
-											-o-transform: rotate(-90deg);
-											/* Для Opera */
-											transform: rotate(-90deg);
-										}
-
-										.st0 {
-											stroke-dasharray: 1000;
-											stroke-dashoffset: 1000;
-											animation: dash 7s linear forwards;
-										}
-
-										@keyframes dash {
-											from {
-												stroke-dashoffset: 1000;
-											}
-
-											to {
-												stroke-dashoffset: 0;
-											}
-										}
-									</style>
-									<circle class="big" cy=50 cx=50 r=45 fill=transparent stroke="#ccc"
-										stroke-width="8"></circle>
-									<circle class="big st0" cy=50 cx=-50 r=45 fill=transparent stroke="#ff6200"
-										stroke-width="8" stroke-dasharray="100, 500" stroke-dashoffset=0></circle>
-									<circle class="small" cy=35 cx=35 r=30 fill=transparent stroke="#ccc"
-										stroke-width="8"></circle>
-									<circle class="small st0" cy=35 cx=-35 r=30 fill=transparent stroke="#ff6200"
-										stroke-width="8" stroke-dasharray="100, 500" stroke-dashoffset=0></circle>
-								</svg>
-							</li>
+							<li>6 </li>
 						</ul>
 					</div>
 					<div class="credit-details-holder">
 						<ul class="info-columns">
 							<li><span>К возврату</span><span class="bold-orange">1126<span
-										class="small">грн</span></span></li>
-							<li><span>С учетом бонусов</span><span class="bold-light-orange">1118<span
 										class="small">грн</span></span></li>
 						</ul>
 					</div>
@@ -238,8 +188,6 @@
 												data-autocomplete-field="administrative_area_level_1"
 												data-rule-notSpaces="1" value="Харківська область" />
 										</div>
-									</div>
-									<div class="column">
 										<div class="form-row">
 											<div class="label-block">
 												<label for="registration_address_form_address_typeOfSettlement"
@@ -263,6 +211,8 @@
 												<option value="5">Хутор</option>
 											</select>
 										</div>
+									</div>
+									<div class="column">
 										<div class="form-row">
 											<div class="label-block">
 												<label for="registration_address_form_address_city" class="required">
@@ -302,8 +252,6 @@
 												data-autocomplete-id="registration_address_form_address_street"
 												data-autocomplete-field="postal_code" value="61000" />
 										</div>
-									</div>
-									<div class="column">
 										<div class="three-columns">
 											<div class="col">
 												<div class="form-row">
@@ -365,48 +313,48 @@
 												</div>
 											</div>
 										</div>
-										<div class="form-row">
-											<div class="label-block">
-												<label class="required">
-													Адрес проживания соответствует адресу регистрации?
-													<span class="req">*</span>
-												</label>
-												<div class="popup-block"><span class="popup-opener" href="#"> <i
-															class="icon-question"></i></span>
-													<div class="popup">
-														<p>Соответствует ли Ваш адрес регистрации фактическому?
-														</p>
-													</div>
-												</div>
+									</div>
+								</div>
+								<div class="form-row row-controls">
+									<div class="label-block">
+										<label class="required">
+											Адрес проживания соответствует адресу регистрации?
+											<span class="req">*</span>
+										</label>
+										<div class="popup-block"><span class="popup-opener" href="#"> <i
+													class="icon-question"></i></span>
+											<div class="popup">
+												<p>Соответствует ли Ваш адрес регистрации фактическому?
+												</p>
 											</div>
-											<div id="registration_address_form_address_residentialMatchesRegistration"
-												class="radio-list half-width">
-												<div class="row">
-													<div class="frame"> <label
-															for="registration_address_form_address_residentialMatchesRegistration_0"
-															class="required">
-															<input type="radio"
-																id="registration_address_form_address_residentialMatchesRegistration_0"
-																name="registration_address_form[address][residentialMatchesRegistration]"
-																required="required" value="1" checked="checked" />
-															Да
-														</label> <label
-															for="registration_address_form_address_residentialMatchesRegistration_1"
-															class="required">
-															<input type="radio"
-																id="registration_address_form_address_residentialMatchesRegistration_1"
-																name="registration_address_form[address][residentialMatchesRegistration]"
-																required="required" value="2" />
-															Нет
-														</label></div>
-												</div>
-											</div>
+										</div>
+									</div>
+									<div id="registration_address_form_address_residentialMatchesRegistration"
+										class="radio-list half-width">
+										<div class="row">
+											<div class="frame"> <label
+													for="registration_address_form_address_residentialMatchesRegistration_0"
+													class="required">
+													<input type="radio"
+														id="registration_address_form_address_residentialMatchesRegistration_0"
+														name="registration_address_form[address][residentialMatchesRegistration]"
+														required="required" value="1" checked="checked" />
+													Да
+												</label> <label
+													for="registration_address_form_address_residentialMatchesRegistration_1"
+													class="required">
+													<input type="radio"
+														id="registration_address_form_address_residentialMatchesRegistration_1"
+														name="registration_address_form[address][residentialMatchesRegistration]"
+														required="required" value="2" />
+													Нет
+												</label></div>
 										</div>
 									</div>
 								</div>
 								<div class="address-holder">
 									<div class="heading-block">
-										<h2>Адрес регистрации</h2>
+										<h2>Адрес проживания</h2>
 									</div>
 									<div class="form-columns">
 										<div class="column">
@@ -453,8 +401,6 @@
 													data-autocomplete-id="registration_address_form_secondAddress_street"
 													data-autocomplete-field="administrative_area_level_1" />
 											</div>
-										</div>
-										<div class="column">
 											<div class="form-row">
 												<div class="label-block">
 													<label
@@ -480,6 +426,8 @@
 													<option value="5">Хутор</option>
 												</select>
 											</div>
+										</div>
+										<div class="column">
 											<div class="form-row">
 												<div class="label-block">
 													<label for="registration_address_form_secondAddress_city"
@@ -524,8 +472,6 @@
 													data-autocomplete-id="registration_address_form_secondAddress_street"
 													data-autocomplete-field="postal_code" />
 											</div>
-										</div>
-										<div class="column">
 											<div class="three-columns">
 												<div class="col">
 													<div class="form-row">
@@ -587,59 +533,6 @@
 															name="registration_address_form[secondAddress][apartment]" />
 													</div>
 												</div>
-											</div>
-										</div>
-										<div class="column-hidden">
-											<div class="form-row">
-												<div class="label-block">
-													<label for="registration_address_form_address_realEstate"
-														class="required">
-														Недвижимость
-														<span class="req">*</span>
-													</label>
-													<div class="popup-block"><span class="popup-opener" href="#"> <i
-																class="icon-question"></i></span>
-														<div class="popup">
-															<p>Владете ли Вы этой недвижимостью?
-															</p>
-														</div>
-													</div>
-												</div><select id="registration_address_form_address_realEstate"
-													name="registration_address_form[address][realEstate]"
-													required="required" style="visibility: hidden">
-													<option value="">Выберите вариант</option>
-													<option value="1" selected="selected">Купленная собственность
-													</option>
-													<option value="2">Аренда помещения</option>
-													<option value="3">Проживание у родственников</option>
-													<option value="4">Проживание в общежитии</option>
-												</select>
-											</div>
-											<div class="form-row">
-												<div class="label-block">
-													<label for="registration_address_form_secondAddress_realEstate"
-														class="required">
-														Недвижимость
-														<span class="req">*</span>
-													</label>
-													<div class="popup-block"><span class="popup-opener" href="#"> <i
-																class="icon-question"></i></span>
-														<div class="popup">
-															<p>Владеете ли Вы этой недвижимостью?
-															</p>
-														</div>
-													</div>
-												</div><select id="registration_address_form_secondAddress_realEstate"
-													name="registration_address_form[secondAddress][realEstate]"
-													required="required"
-													data-rule-required="#registration_form_address_residentialMatchesRegistration_1:checked">
-													<option value="">Выберите вариант</option>
-													<option value="1" selected="selected">Купленная собственность
-													</option>
-													<option value="2">Аренда помещения</option>
-													<option value="3">Проживание у родственников</option>
-													<option value="4">Проживание в общежитии</option>
-												</select>
 											</div>
 										</div>
 									</div>
