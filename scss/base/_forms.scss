@@ -445,6 +445,35 @@ label,
 		}
 	}
 
+	.date-holder {
+		width: 100%;
+		display: block;
+		height: 40px;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		margin-bottom: 20px;
+
+		input.datepicker {
+			position: absolute;
+			top: 22px;
+			z-index: -1;		
+		}
+
+		.ui-datepicker-trigger {
+			margin-right: 5px;
+			color: $orange;
+			font-size: 24px;
+			position: absolute;
+			right: 0;
+			width: 30px;
+			border: none!important;
+			background-color: transparent!important;
+			box-shadow: none!important;
+			outline: none!important;
+		}
+	}
+
 	@include media(">widescreen") {
 		&.row-controls {
 			width: calc(100% - 30px);

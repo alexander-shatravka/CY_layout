@@ -1920,6 +1920,28 @@ function initDatepicker() {
 
 		});
 	});	
+
+	if(jQuery('.salary-datepicker').length){
+		jQuery('.salary-datepicker .datepicker').datepicker('destroy');
+		jQuery('.salary-datepicker .datepicker').each(function(){
+			var self = jQuery(this),
+				minDays = self.data('mindays'),
+				maxDays = self.data('maxdays');
+	
+			self.datepicker({
+				dateFormat: 'dd.mm.yy',
+				dayNamesMin: [ "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб" ],
+				monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Aвгуст", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
+				firstDay: 1,
+				maxDate: maxDays ? maxDays : '30',
+				buttonImage: "/images/bg-hidden.png",
+				buttonText: "Select Day",
+				showOn: "both",
+				minDate: minDays ? minDays : '1',
+			});
+		});	
+	}
+	
 }
 
 
