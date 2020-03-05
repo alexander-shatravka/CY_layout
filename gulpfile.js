@@ -25,17 +25,6 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('assets'));
 });
 
-// Scripts
-gulp.task('scripts', function() {
-    return gulp.src('js/**/*.js')
-        .pipe(sourcemaps.init())
-        .pipe(order(['js/jquery.min.js', 'js/libs/**/*.js', 'js/functions.js'], {base: './'}))
-        .pipe(concat('main.min.js'))
-        // .pipe(uglify())
-        // .pipe(sourcemaps.write('maps'))
-        .pipe(gulp.dest('assets'));
-});
-
 // Images compression
 gulp.task('images', function() {
     return gulp.src('images/**/*')
@@ -63,11 +52,10 @@ gulp.task('clear', function () {
 // Watch
 gulp.task('watch', function() {
     gulp.watch(['scss/**/*'], ['styles']);
-    gulp.watch(['js/**/*'], ['scripts']);
     gulp.watch(['images/**/*'], ['images']);
 });
 
 // Default task
 gulp.task('default', ['clean'], function() {
-    gulp.run('styles', 'scripts', 'images');
+    gulp.run('styles', 'images');
 });

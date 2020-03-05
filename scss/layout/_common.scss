@@ -1646,6 +1646,8 @@ main {
 	line-height: 1.4;
 	color: $white;
 	margin: 0 -22px 0 -18px;
+	display: flex;
+	flex-wrap: wrap;
 	
 	@include media("<desktop") {
 		font-size: 14px;
@@ -2530,6 +2532,7 @@ main {
 	color: $gray;
 	.jcf-scrollable {
 		height: 800px;
+		overflow-y: scroll;
 		@include media('<tablet') {
 		  height: 300px;
 		}
@@ -3963,13 +3966,13 @@ main {
 
 				font-size: 18px;
 				line-height: 20px;
-				height: 40px;
+				height: 45px;
 				padding: 10px 16px;
 				margin: 0 0 20px;
 			}
 
 			.jcf-select {
-				height: 40px;
+				height: 45px;
 				margin-bottom: 20px;
 			}
 

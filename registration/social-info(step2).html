@@ -41,7 +41,6 @@
 		}
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-	<script src="../assets/main.min.js"></script>
 
 </head>
 
@@ -130,7 +129,7 @@
 										class="small">грн</span></span></li>
 						</ul>
 					</div>
-				</div>	
+				</div>
 				<div class="triangle-opener"></div>
 			</div>
 			<div class="registration-holder">
@@ -142,91 +141,44 @@
 
 
 							<div class="step-block active" data-step="2" data-percent="40">
+								<div class="form-row row-controls">
+									<div class="label-block">
+										<label class="required">
+											Паспорт нового образца
+											<span class="req">*</span>
+										</label>
+										<div class="popup-block"><span class="popup-opener" href="#"> <i
+													class="icon-question"></i></span>
+											<div class="popup">
+												<p>У Вас паспорт нового образца (id карта)?
+												</p>
+											</div>
+										</div>
+									</div>
+									<div id="registration_social_info_form_isPassportNewType"
+										class="radio-list half-width passport">
+										<div class="row">
+											<div class="frame"> <label
+													for="registration_social_info_form_isPassportNewType_0"
+													class="required">
+													<input type="radio"
+														id="registration_social_info_form_isPassportNewType_0"
+														name="registration_social_info_form[isPassportNewType]"
+														required="required" value="1" />
+													Да
+												</label> <label for="registration_social_info_form_isPassportNewType_1"
+													class="required">
+													<input type="radio"
+														id="registration_social_info_form_isPassportNewType_1"
+														name="registration_social_info_form[isPassportNewType]"
+														required="required" value="2" checked="checked" />
+													Нет
+												</label></div>
+										</div>
+									</div>
+								</div>
 								<div class="form-columns">
 									<div class="column">
-										<div class="form-row">
-											<div class="label-block">
-												<label class="required">
-													Паспорт нового образца
-													<span class="req">*</span>
-												</label>
-												<div class="popup-block"><span class="popup-opener" href="#"> <i
-															class="icon-question"></i></span>
-													<div class="popup">
-														<p>У Вас паспорт нового образца (id карта)?
-														</p>
-													</div>
-												</div>
-											</div>
-											<div id="registration_social_info_form_isPassportNewType"
-												class="radio-list half-width passport">
-												<div class="row">
-													<div class="frame"> <label
-															for="registration_social_info_form_isPassportNewType_0"
-															class="required">
-															<input type="radio"
-																id="registration_social_info_form_isPassportNewType_0"
-																name="registration_social_info_form[isPassportNewType]"
-																required="required" value="1" />
-															Да
-														</label> <label
-															for="registration_social_info_form_isPassportNewType_1"
-															class="required">
-															<input type="radio"
-																id="registration_social_info_form_isPassportNewType_1"
-																name="registration_social_info_form[isPassportNewType]"
-																required="required" value="2" checked="checked" />
-															Нет
-														</label></div>
-												</div>
-											</div>
-										</div>
-										<div class="passport-block" data-passport="type1">
-											<div class="form-row">
-												<div class="label-block">
-													<label for="registration_social_info_form_documentNumber"
-														class="required">
-														Номер документа
-														<span class="req">*</span>
-													</label>
-													<div class="popup-block"><span class="popup-opener" href="#"> <i
-																class="icon-question"></i></span>
-														<div class="popup">
-															<p>Укажите серию и номер паспорта
-															</p>
-														</div>
-													</div>
-												</div><input type="tel"
-													id="registration_social_info_form_documentNumber"
-													name="registration_social_info_form[documentNumber]"
-													required="required"
-													data-rule-documentNumberValidate="#registration_form_isPassportNewType_0:checked"
-													minlength="9" maxlength="9" data-mask="999999999" />
-											</div>
-
-											<div class="form-row">
-												<div class="label-block">
-													<label for="registration_social_info_form_passportIssuedByNumber"
-														class="required">
-														Кем выдан?
-														<span class="req">*</span>
-													</label>
-													<div class="popup-block"><span class="popup-opener" href="#"> <i
-																class="icon-question"></i></span>
-														<div class="popup">
-															<p>Укажите, кем вам был выдан паспорт
-															</p>
-														</div>
-													</div>
-												</div><input type="number"
-													id="registration_social_info_form_passportIssuedByNumber"
-													name="registration_social_info_form[passportIssuedByNumber]"
-													required="required"
-													data-rule-passportIssuedByNumberValidate="#registration_form_isPassportNewType_0:checked"
-													data-rule-required="#registration_form_isPassportNewType_0:checked"
-													data-mask="9999" />
-											</div>
-										</div>
 										<div class="passport-block selected" data-passport="type2">
 											<div class="form-row">
 												<div class="label-block">
@@ -245,8 +197,7 @@
 												</div><input type="text" id="registration_social_info_form_passport"
 													name="registration_social_info_form[passport]" required="required"
 													data-rule-passportValidate="#registration_form_isPassportNewType_1:checked"
-													minlength="9" maxlength="9" data-mask="RR 999999"
-													value="ца 123123" />
+													minlength" />
 											</div>
 
 											<div class="form-row">
@@ -271,7 +222,6 @@
 													value="test" />
 											</div>
 										</div>
-
 										<div class="form-row">
 											<div class="label-block">
 												<label for="registration_social_info_form_passportRegistration"
@@ -361,108 +311,60 @@
 												required="required" data-rule-digits="1" minlength="10" maxlength="10"
 												data-mask="9999999999" value="1111111111" />
 										</div>
-									</div>
-									<div class="column-hidden">
-										<div class="form-row">
-											<div class="label-block">
-												<label for="registration_social_info_form_maritalStatus"
-													class="required">
-													Семейное положение
-													<span class="req">*</span>
-												</label>
-												<div class="popup-block"><span class="popup-opener" href="#"> <i
-															class="icon-question"></i></span>
-													<div class="popup">
-														<p>Укажите Ваше семейное положение
-														</p>
+										<div class="passport-block selected" data-passport="type1">
+											<div class="form-row">
+												<div class="label-block">
+													<label for="registration_social_info_form_passportValidDate"
+														class="required">
+														Срок действия
+														<span class="req">*</span>
+													</label>
+													<div class="popup-block"><span class="popup-opener" href="#"> <i
+																class="icon-question"></i></span>
+														<div class="popup">
+															<p>Когда истекает срок действия паспорта?
+															</p>
+														</div>
 													</div>
-												</div>
-											</div><select id="registration_social_info_form_maritalStatus"
-												name="registration_social_info_form[maritalStatus]"
-												style="visibility: hidden">
-												<option value="1">Женат / Замужем</option>
-												<option value="2" selected="selected">Не женат / Не замужем</option>
-												<option value="3">Разведен / Разведена</option>
-												<option value="4">Вдова / Вдовец</option>
-												<option value="5">Гражданский брак</option>
-											</select>
-										</div>
-										<div class="form-row">
-											<div class="label-block">
-												<label for="registration_social_info_form_numberOfDependents"
-													class="required">
-													Какое количество людей на содержании ?
-													<span class="req">*</span>
-												</label>
-												<div class="popup-block"><span class="popup-opener" href="#"> <i
-															class="icon-question"></i></span>
-													<div class="popup">
-														<p>Сколько людей Вы сейчас содержите?
-														</p>
+												</div><input type="text"
+													id="registration_social_info_form_passportValidDate"
+													name="registration_social_info_form[passportValidDate]"
+													required="required" placeholder="дд.мм.гггг"
+													data-rule-datevalidate="1"
+													data-rule-required="#registration_form_isPassportNewType_0:checked"
+													data-mask="99.99.9999" minlength="10" maxlength="10"
+													autocomplete="off">
+											</div>
+											<div class="form-row">
+												<div class="label-block">
+													<label for="registration_social_info_form_passportRecordNumber"
+														class="required">
+														Номер записи
+														<span class="req">*</span>
+													</label>
+													<div class="popup-block"><span class="popup-opener" href="#"> <i
+																class="icon-question"></i></span>
+														<div class="popup">
+															<p>Укажите ваш личный номер
+															</p>
+														</div>
 													</div>
-												</div>
-											</div><select id="registration_social_info_form_numberOfDependents"
-												name="registration_social_info_form[numberOfDependents]"
-												style="visibility: hidden">
-												<option value="1" selected="selected">Нет</option>
-												<option value="2">1</option>
-												<option value="3">2</option>
-												<option value="4">3</option>
-												<option value="5">от 4 до 6</option>
-												<option value="6">от 7 до 9</option>
-											</select>
-										</div>
-										<div class="form-row">
-											<div class="label-block">
-												<label for="registration_social_info_form_education" class="required">
-													Образование
-													<span class="req">*</span>
-												</label>
-												<div class="popup-block"><span class="popup-opener" href="#"> <i
-															class="icon-question"></i></span>
-													<div class="popup">
-														<p>Какое у Вас обраование?
-														</p>
-													</div>
-												</div>
-											</div><select id="registration_social_info_form_education"
-												name="registration_social_info_form[education]" required="required"
-												style="visibility: hidden">
-												<option value="">Выберите вариант</option>
-												<option value="1">Незаконченное среднее</option>
-												<option value="2">Среднее</option>
-												<option value="3">Неполное высшее</option>
-												<option value="4" selected="selected">Высшее</option>
-												<option value="5">Несколько высших</option>
-												<option value="6">Ученая ступень</option>
-											</select>
-										</div>
-										<div class="form-row">
-											<div class="label-block">
-												<label for="registration_social_info_form_citizenship" class="required">
-													Украинское гражданство
-													<span class="req">*</span>
-												</label>
-												<div class="popup-block"><span class="popup-opener" href="#"> <i
-															class="icon-question"></i></span>
-													<div class="popup">
-														<p>Являетесь ли Вы гражданином Украины?
-														</p>
-													</div>
-												</div>
-											</div><select id="registration_social_info_form_citizenship"
-												name="registration_social_info_form[citizenship]"
-												style="visibility: hidden">
-												<option value="1" selected="selected">Да</option>
-												<option value="2">Нет</option>
-											</select>
+												</div><input type="tel"
+													id="registration_social_info_form_passportRecordNumber"
+													name="registration_social_info_form[passportRecordNumber]"
+													required="required"
+													data-rule-required="#registration_form_isPassportNewType_0:checked"
+													data-rule-passportrecordnumbervalidate="1"
+													data-mask="99999999-99999" minlength="14" maxlength="14"
+													autocomplete="off">
+											</div>
 										</div>
 									</div>
 								</div>
 								<div class="button-block"><a class="button btn-light button-prev"
 										href="/registration/create-an-account(step1).html">Назад</a><a
-										class="button btn-validate" href="/registration/address(step3).html" data-text-sending="Подождите..."
-										data-text-error="Ошибка">Далее</a></div>
+										class="button btn-validate" href="/registration/address(step3).html"
+										data-text-sending="Подождите..." data-text-error="Ошибка">Далее</a></div>
 							</div>
 
 							<input type="hidden" id="registration_social_info_form__token"
