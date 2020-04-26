@@ -40,7 +40,7 @@ body {
 		@include media("<tablet") {
 			overflow: hidden;
 			touch-action: none;
-			
+
 			&:before {
 				content: '';
 				background: rgba($black, 0.5);
@@ -60,11 +60,11 @@ body {
 	width: 100%;
 	position: relative;
 	padding: 100px 0 0;
-	
+
 	@include media("<desktop") {
 		padding-top: 86px;
 	}
-	
+
 	@include media("<tablet") {
 		padding-top: 56px;
 	}
@@ -76,11 +76,11 @@ body {
 	width: 100%;
 	padding: 0 $trim;
 	margin: 0 auto;
-	
+
 	@include media("<desktop") {
 		padding: 0 24px;
 	}
-	
+
 	@include media("<tablet") {
 		padding: 0 15px;
 	}
@@ -88,14 +88,14 @@ body {
 
 .text-right {
 	text-align: right;
-	
+
 	&.heading {
 		h1 {
 			&:before {
 				left: 0;
 				right: -9999px;
 			}
-			
+
 			@include media("<tablet") {
 				&:before {
 					left: -9999px;
@@ -120,59 +120,59 @@ body {
 	min-width: 225px;
 	box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
 	transition: color 0.3s, background 0.3s, border 0.3s;
-	
+
 	&:hover {
 		color: $btn-color;
 		background: darken($btn-background, 7%);
 		border-color: darken($btn-background, 7%);
 	}
-	
+
 	&.disabled {
 		background: $disabled;
 		border-color: $disabled;
 		cursor: default;
 		pointer-events: none;
 	}
-	
-	&.phone-verified {		
+
+	&.phone-verified {
 		background: $light-green;
 		border-color: $light-green;
 		cursor: default;
 		pointer-events: none;
 	}
 
-	&.phone-not-verified {		
+	&.phone-not-verified {
 		background: $red;
-		border-color: $red;			
+		border-color: $red;
 	}
 
 	&.btn-light {
 		background: $light-orange;
 		border-color: $light-orange;
-		
+
 		&:hover {
 			background: darken($light-orange, 13%);
 			border-color: darken($light-orange, 13%);
 		}
 	}
-	
+
 	&.btn-white {
 		border-color: $white;
 		background: none;
 		color: $white;
 		box-shadow: none;
-		
+
 		&:hover {
 			color: $orange;
 			background: $white;
 			border-color: $white;
 		}
 	}
-	
+
 	@include media("<desktop") {
 		min-width: 220px;
 	}
-	
+
 	@include media("<tablet") {
 		min-width: 225px;
 	}
@@ -180,7 +180,7 @@ body {
 
 .desktop-hidden {
 	display: none;
-	
+
 	@include media("<tablet") {
 		display: block;
 	}
@@ -199,7 +199,7 @@ main {
 
 .content-section {
 	padding: 94px 0 101px;
-	
+
 	@include media("<tablet") {
 		padding: 16px 0 20px;
 	}
@@ -261,19 +261,19 @@ main {
 		.heading {
 			.h1 {
 				color: #fff;
-	
+
 				&::before {
 					background: #fff;
 				}
 			}
 		}
 	}
-	
+
 	&.program-section {
 		.heading {
 			.h1 {
 				color: #fff;
-	
+
 				&::before {
 					background: #fff;
 				}
@@ -286,7 +286,7 @@ main {
 			.h1 {
 				color: #444;
 				margin-bottom: 15px;
-	
+
 				&::before {
 					background: #444;
 				}
@@ -298,76 +298,76 @@ main {
 .intro-section {
 	background: #f2f2f0;
 	margin: -31px 0 0;
-	
+
 	.holder {
 		@extend .container;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
-		
+
 		@include media("<desktop") {
 			flex-direction: column;
 		}
 	}
-	
+
 	.col-credit-form {
 		width: 67.1%;
 		padding-top: 63px;
-		
+
 		@include media("<desktop") {
 			width: auto;
 		}
-		
+
 		@include media("<tablet") {
 			padding-top: 14px;
 			}
 	}
-	
+
 	.info-col {
 		// margin-right: -130px;
 		// width: calc(100% - 67.1% + 130px);
 		width: calc(100% - 67.1%);
-		
+
 		@include media("<desktop") {
 			margin: 0 -24px;
 			width: auto;
 		}
 	}
-	
+
 	.heading {
 		h1 {
 			font-size: 36px;
 			padding-bottom: 9px;
 			margin-bottom: 85px;
-			
+
 			&:before {
 				background: $dark-gray;
 			}
-			
+
 			@include media("<tablet") {
 				font-size: 24px;
 				margin-bottom: 27px;
 			}
 		}
 	}
-	
+
 	.row {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
 		margin-bottom: 89px;
-		
+
 		@include media("<tablet") {
 			display: block;
 			margin-bottom: 38px;
 		}
-		
+
 		&.row-period {
 			.ui-slider-range {
 				background: #ff8200;
 			}
 		}
-			
+
 		.title {
 			display: block;
 			text-transform: uppercase;
@@ -378,7 +378,7 @@ main {
 			float: left;
 			width: 18%;
 			position: relative;
-			
+
 			&.term {
 				display: flex;
 				align-items: center;
@@ -452,7 +452,7 @@ main {
 			@include media("<desktop") {
 				width: 19%;
 			}
-			
+
 			@include media("<tablet") {
 				float: none;
 				width: auto;
@@ -463,28 +463,28 @@ main {
 			}
 		}
 	}
-	
+
 	.line {
 		margin-bottom: 2px;
 		width: 73.8%;
 		padding-left: 20px;
-		
+
 		@include media("<desktop") {
 			width: 81%;
 			padding-right: 15px;
 		}
-		
+
 		@include media("<tablet") {
 			width: 100%;
 			padding: 0 12px;
 			margin-bottom: 5px;
 		}
-		
+
 		* {
 			outline: none;
 		}
 	}
-	
+
 	.min-mark {
 		float: left;
 		width: 43px;
@@ -492,30 +492,30 @@ main {
 		font-weight: 500;
 		letter-spacing: 2px;
 		line-height: 34px;
-		
+
 		@include media("<tablet") {
 			font-size: 20px;
 			margin-top: -7px;
 			width: 41px;
 		}
 	}
-	
+
 	.line-holder {
 		width: 100%;
 		padding-top: 14px;
-		
+
 		@include media("<tablet") {
 			padding-top: 11px;
 		}
 	}
-	
+
 	.line-slider {
 		position: relative;
 		height: 1px;
 		background: #444;
 		margin-bottom: 0;
 		padding: 0 27px;
-		
+
 		&:before,
 		&:after {
 			position: absolute;
@@ -528,24 +528,24 @@ main {
 			top: -4px;
 			left: -4px;
 		}
-		
+
 		&:after {
 			background: #444;
 			left: auto;
 			right: -4px;
 		}
-		
+
 		@include media("<tablet") {
 			margin-bottom: 17px;
 			padding: 0 23px;
 		}
 	}
-	
+
 	.ui-slider {
 		position: relative;
 		height: 1px;
 	}
-	
+
 	.ui-slider-range {
 		background: #ff6200;
 		height: 3px;
@@ -555,7 +555,7 @@ main {
 		margin: -1px -13px 0;
 		transition: width 0.3s;
 	}
-	
+
 	.ui-slider-handle {
 		background: #f2f2f2;
 		height: 26px;
@@ -570,7 +570,7 @@ main {
 		z-index: 4;
 		cursor: pointer;
 		// transition: left 0.3s;
-		
+
 		&:after {
 			content:'';
 			clear:both;
@@ -583,7 +583,7 @@ main {
 			transform: translateX(-50%) translateY(-50%);
 			border-radius: 50%;
 		}
-		
+
 		.clicable-area {
 			position: absolute;
 			top: -15px;
@@ -593,21 +593,21 @@ main {
 			border-radius: 50%;
 		}
 	}
-	
+
 	.slide-result {
 		width: calc(100% - 63.3% - 43px - 0.1px);
 		padding: 0 10px 0 34px;
-		
+
 		@include media("<desktop") {
 			padding: 0 0 0 36px;
 			width: calc(100% - 67% - 43px - 0.1px);
 		}
-		
+
 		@include media("<tablet") {
 			width: 100%;
 			padding: 18px 0 0 37px;
 		}
-		
+
 		input {
 			@include placeholder {
 				color: $base-text-color;
@@ -625,36 +625,36 @@ main {
 			padding: 2px 14px 4px;
 			width: 56%;
 			line-height: 28px;
-			
+
 			@include media("<desktop") {
 				width: 60%;
 				padding: 2px 10px 4px;
 			}
-			
+
 			@include media("<tablet") {
 				width: 108px;
 				padding: 2px 14px 4px;
 			}
 		}
-		
+
 		.currency {
 			float: left;
 			font-size: 16px;
 			line-height: 44px;
 			padding-left: 14px;
-			
+
 			@include media("<desktop") {
 				padding-left: 3px;
 				float: right;
 			}
-			
+
 			@include media("<tablet") {
 				float: left;
 				padding-left: 14px;
 			}
 		}
 	}
-	
+
 	.after-slide,
 	.min-slide {
 		float: left;
@@ -663,7 +663,7 @@ main {
 		font-size: 16px;
 		position: relative;
 		padding-top: 22px;
-		
+
 		&:before {
 			content:'';
 			display:block;
@@ -676,13 +676,13 @@ main {
 			border: 1px solid #c0c0c0;
 			border-top: none;
 		}
-		
+
 		@include media("<tablet") {
 			font-size: 12px;
 			line-height: 14px;
 			width: 36.2%;
 		}
-		
+
 		a {
 			background: $orange;
 			color: $white;
@@ -696,43 +696,43 @@ main {
 			border-radius: 50%;
 			margin: -2px 0 0 6px;
 			transition: background 0.3s;
-			
+
 			&:hover {
 				background: darken($orange, 7%);
 			}
-			
+
 			@include media("<tablet") {
 				margin: 2px 0 0 5px;
 			}
 		}
 	}
-	
+
 	.after-slide {
 		margin-left: 2%;
 		width: 56.8%;
-		
+
 		@include media("<tablet") {
 			margin-left: 4.1%;
 			width: 59.6%;
 		}
 	}
-	
+
 	.total-line {
 		@extend %clearfix;
 		margin-top: -15px;
 		padding: 0 50px 20px 12px;
-		
+
 		@include media("<desktop") {
 			padding: 0 2px 48px 13px;
 		}
-		
+
 		@include media("<tablet") {
 			padding: 9px 0 18px;
 			max-width: 290px;
 			margin: -15px auto 0;
 		}
 	}
-	
+
 	.total-info {
 		@extend %clearfix;
 		float: left;
@@ -754,7 +754,7 @@ main {
 				width: 33%;
 				padding: 0 5px;
 			}
-			
+
 			@include media("<tablet") {
 				width: 32%;
 				padding: 0 7px;
@@ -769,7 +769,7 @@ main {
 					width: 33%;
 					padding: 0 5px;
 				}
-			
+
 				@include media("<tablet") {
 					width: 32%;
 					padding: 0 6px;
@@ -782,7 +782,7 @@ main {
 					@include media("<1170px") {
 						padding: 0 5px;
 					}
-			
+
 					@include media("<tablet") {
 						width: 36%;
 						padding: 0 8px;
@@ -803,7 +803,7 @@ main {
 				}
 			}
 		}
-		
+
 		&:before {
 			content:'';
 			clear:both;
@@ -815,7 +815,7 @@ main {
 			border-width: 4px 13px 0;
 			height: 7px;
 		}
-		
+
 		&:after {
 			content:'';
 			clear:both;
@@ -827,11 +827,11 @@ main {
 			background: url(../images/separator1.png) no-repeat;
 			background-size: 100% 100%;
 		}
-		
+
 		@include media("<desktop") {
 			width: 47.4%;
 		}
-		
+
 		@include media("<tablet") {
 			width: auto;
 			float: none;
@@ -839,7 +839,7 @@ main {
 			margin: 0 5px 27px;
 			display: flex;
 			justify-content: space-between;
-			
+
 			&:before {
 				border-width: 4px 5px 0;
 				left: -5px;
@@ -847,57 +847,57 @@ main {
 			}
 		}
 	}
-	
+
 	.total-titles {
 		float: left;
 		width: 53%;
 		padding: 2px 0 0;
 		text-align: right;
-		
+
 		@include media("<desktop") {
 			width: 55%;
 		}
-		
+
 		@include media("<tablet") {
 			width: 56.5%;
 			// max-width: 148px;
 		}
-		
+
 		span {
 			display: block;
 			text-transform: uppercase;
 			font-size: 12px;
 			padding-bottom: 3px;
 			letter-spacing: 0.6px;
-			
+
 			&:first-child {
 				letter-spacing: 0;
 				font-weight: 500;
 			}
-			
+
 			@include media("<tablet") {
 				font-size: 12px;
 				line-height: 14px;
 				padding-bottom: 6px;
 				letter-spacing: 0.7px;
-				
+
 				&:first-child {
 					letter-spacing: 0;
 				}
 			}
 		}
-		
+
 		b {
 			text-transform: uppercase;
 			display: block;
 			font-size: 20px;
-			
+
 			@include media("<tablet") {
 				margin-top: -1px;
 			}
 		}
 	}
-	
+
 	.btn-get {
 		float: right;
 		width: 46.3%;
@@ -906,6 +906,9 @@ main {
 		font-size: 24px;
 		font-weight: 900;
 		border: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
 		&.show-in-main {
 			display: flex;
@@ -913,11 +916,11 @@ main {
 			align-content: center;
 			justify-content: center;
 		}
- 		
+
 		@include media("<desktop") {
 			width: 49%;
 		}
-		
+
 		@include media("<tablet") {
 			font-size: 20px;
 			float: none;
@@ -926,21 +929,21 @@ main {
 			height: 85px;
 		}
 	}
-	
+
 	.total-values {
 		float: right;
 		width: 41%;
-		
+
 		@include media("<desktop") {
 			width: 38%;
 		}
-		
+
 		@include media("<tablet") {
 			width: 40%;
 			// max-width: 140px;
 		}
 	}
-	
+
 	.l-wrap {
 		display: block;
 		overflow: hidden;
@@ -948,7 +951,7 @@ main {
 		font-weight: bold;
 		line-height: 18px;
 		margin-bottom: 0;
-		
+
 		sub {
 			bottom: 0;
 			font-size: 14px;
@@ -976,10 +979,10 @@ main {
 				line-height: 18px;
 			}
 		}
-		
+
 		b {
 			float: left;
-			
+
 			&.total-value {
 				font-size: 24px;
 				color: $orange;
@@ -995,7 +998,7 @@ main {
 					line-height: 20px;
 				}
 			}
-			
+
 			&.expired-date {
 				line-height: 18px;
 				padding-top: 6px;
@@ -1006,24 +1009,24 @@ main {
 				}
 			}
 		}
-		
+
 		span {
 			display: block;
 			text-align: left;
 			overflow: hidden;
 			padding-left: 4px;
-			
+
 			@include media("<tablet") {
 				padding-left: 4px;
 			}
-			
+
 			&.currency {
 				text-align: left;
 				font-size: 14px;
 				padding-top: 6px;
 				padding-left: 7px;
 				font-weight: 400;
-				
+
 				@include media("<tablet") {
 					padding-top: 7px;
 					padding-left: 7px;
@@ -1050,7 +1053,7 @@ main {
 	line-height: 22px;
 	z-index: 20;
 	cursor: pointer;
-	
+
 	&:before,
 	&:after {
 		content: '';
@@ -1060,19 +1063,19 @@ main {
 		height: 2px;
 		background: $white;
 	}
-	
+
 	@include media("<tablet") {
 		width: 22px;
 		height: 22px;
 		bottom: -10px;
 		line-height: 18px;
-		
+
 		&:before,
 		&:after {
 			margin-top: 10px;
 		}
 	}
-	
+
   .row-period & {
     background: #ff8200;
   }
@@ -1093,26 +1096,26 @@ main {
   background: $dark-gray;
   line-height: 26px;
   transition: background-color .3s linear;
-	
+
 	&:before {
 		width: 10px;
 	}
-	
+
 	&:after {
 		width: 2px;
 		height: 10px;
 		margin-top: -6px;
 	}
-	
+
 	@include media("<tablet") {
 		font-size: 18px;
 		line-height: 20px;
-		
+
 		&:after {
 			margin-top: -6px;
 		}
 	}
-	
+
   .row-period & {
     background: $dark-gray;
   }
@@ -1151,15 +1154,15 @@ main {
   font-size: 16px;
   line-height: 26px;
   margin-left: 1px;
-	
+
   .row-period & {
     background: #ff8200;
   }
-	
+
 	.currency {
 		display: none;
 	}
-	
+
   > span {
     display: block;
     box-shadow: 0 4px 10px rgba($black, .25);
@@ -1168,13 +1171,13 @@ main {
     position: relative;
 		min-width: 42px;
 		text-align: center;
-		
-		
+
+
 		@include media("<tablet") {
 			padding: 6px 7px 5px;
 		}
   }
-	
+
   &:before {
     content:'';
     display:block;
@@ -1188,24 +1191,24 @@ main {
     top: 100%;
     left: 50%;
     margin-left: 1px;
-		
+
     .row-period & {
       border-color: #ff8200 transparent transparent transparent;
     }
   }
-	
+
   b {
     font-size: 24px;
     line-height: 24px;
     font-weight: bold;
     display: inline-block;
     vertical-align: top;
-		
+
 		@include media("<tablet") {
 			padding-right: 0;
 		}
   }
-	
+
   span {
     display: inline-block;
     vertical-align: top;
@@ -1217,15 +1220,15 @@ main {
 	background-size: cover;
 	position: relative;
 	background-position: 50% 50%;
-	
+
 	@include media("<desktop") {
 		height: 179px;
 	}
-	
+
 	@include media("<tablet") {
 		height: 235px;
 	}
-	
+
 	.btn-get-info {
 		position: absolute;
 		bottom: 20px;
@@ -1236,7 +1239,7 @@ main {
 		text-transform: uppercase;
 		color: $base-text-color;
 		overflow: hidden;
-		
+
 		&:after {
 			font-family: 'icomoon' !important;
 			speak: none;
@@ -1254,68 +1257,68 @@ main {
 			font-size: 33px;
 			transition: color 0.3s;
 		}
-		
+
 		&.hover {
 			&:after {
 				color: $orange;
 			}
 		}
-		
+
 		@include media("<widescreen") {
 			width: 94%;
 		}
-		
+
 		@include media("<desktop") {
 			width: 50%;
 			bottom: 40px;
 		}
-		
+
 		@include media("<tablet") {
 			bottom: 17px;
 			width: 96.5%;
 			border-width: 4px;
-			
+
 			&:after {
 				top: 16px;
 				right: 13px;
 				font-size: 27px;
 			}
 		}
-		
+
 		> span {
 			display: block;
 			padding: 15px 40px 14px 20px;
 			line-height: 18px;
-			
+
 			@include media("<widescreen") {
 				padding-left: 15px;
 			}
-			
+
 			@include media("<desktop") {
 				padding: 14px 45px 13px 24px;
 				line-height: 19px;
 			}
-			
+
 			@include media("<tablet") {
 				padding: 10px 45px 18px 24px;
 				font-size: 16px;
 				line-height: 18px;
 			}
-			
+
 			b {
 				font-size: 24px;
 				display: block;
 				vertical-align: top;
 				line-height: 24px;
 				font-weight: 900;
-				
+
 				@include media("<tablet") {
 					font-size: 20px;
 					line-height: 21px;
 				}
 			}
 		}
-		
+
 		> span.over-box {
 			padding: 0 29px;
 			height: 0;
@@ -1324,39 +1327,39 @@ main {
 			background: $orange;
 			margin: 0 0 -6px;
 			transition: height .3s;
-			
+
 			@include media("<widescreen") {
 				padding: 5px 15px 1px;
 			}
-			
+
 			@include media("<desktop") {
 				padding: 5px 24px 1px;
 			}
-			
+
 			@include media("<tablet") {
 				padding: 0 20px;
 				margin-bottom: -8px;
 			}
-			
+
 			b,
 			span {
 				font-size: 14px;
 				line-height: 20px;
 				display: inline;
 				vertical-align: top;
-				
+
 				@include media("<tablet") {
 					font-size: 12px;
 					line-height: 14px;
 				}
 			}
 		}
-		
+
 		&.hover > span.over-box {
 			// padding: 4px 29px 1px;
 			margin: 0;
 			height: 25px;
-			
+
 			@include media("<tablet") {
 				padding: 7px 24px 0;
 			}
@@ -1371,7 +1374,7 @@ main {
 				display: block;
 				margin: -4px 0 6px;
 			}
-			
+
 			@include media("<tablet") {
 				margin: -7px 0 -8px;
 			}
@@ -1394,7 +1397,7 @@ main {
 	font-size: 24px;
 	line-height: 1.21;
 	text-transform: uppercase;
-	
+
 	@include media("<desktop") {
 		flex-wrap: wrap;
 		justify-content: center;
@@ -1404,7 +1407,7 @@ main {
 		margin: 0 -5px;
 		padding: 13px 0 28px;
 	}
-	
+
 	@include media("<tablet") {
 		width: auto;
 		font-size: 14px;
@@ -1412,23 +1415,23 @@ main {
 		padding: 0;
 		margin: -10px -8px 3px;
 	}
-	
+
 	li {
 		text-align: center;
 		width: 16.67%;
 		padding: 0 15px;
-		
+
 		@include media("<desktop") {
 			width: 33.33%;
 			padding: 0 5px 16px;
 		}
-		
+
 		@include media("<tablet") {
 			width: 33.33%;
 			padding: 0 5px;
 			margin: 0 0 -4px;
 		}
-		
+
 		&.decor-block {
 			@include media("<desktop") {
 				position: absolute;
@@ -1437,7 +1440,7 @@ main {
 				width: 36%;
 				margin-left: 23px;
 			}
-			
+
 			@include media("<tablet") {
 				position: static;
 				left: auto;
@@ -1445,55 +1448,55 @@ main {
 				width: 33.33%;
 				margin: 0;
 			}
-			
+
 			.gif-block {
 				margin: -19px -10px 0 -30px;
-				
+
 				@include media("<tablet") {
 					margin: 0 4px;
 				}
 			}
 		}
 	}
-	
+
 	.image-block {
 		display: flex;
 		height: 162px;
 		align-items: flex-end;
 		justify-content: center;
 		margin: 0 0 22px;
-		
+
 		@include media("<desktop") {
 			height: 110px;
 			margin-bottom: 26px;
 		}
-		
+
 		@include media("<tablet") {
 			height: 80px;
 			width: 113px;
 			margin: 0 -11px 9px;
 		}
-		
+
 		img {
 			@include media("<desktop") {
 				transform: scale(0.8);
 				transform-origin: center bottom;
 			}
-			
+
 			@include media("<tablet") {
 				transform: scale(0.67);
 			}
 		}
 	}
-	
+
 	span {
 		display: block;
 		padding: 0 4px;
-		
+
 		@include media("<desktop") {
 			padding: 0 14px;
 		}
-		
+
 		@include media("<tablet") {
 			padding: 0;
 		}
@@ -1509,20 +1512,20 @@ main {
 	font-size: 24px;
 	text-align: center;
 	padding: 0 0 50px;
-	
+
 	@include media("<tablet") {
 		font-size: 14px;
 		line-height: 17px;
 		padding-bottom: 17px;
 	}
-	
+
 	span {
 		display: inline-block;
 		vertical-align: top;
 		position: relative;
 		max-width: 824px;
 		padding: 45px 0 0;
-		
+
 		&:before {
 			content: '';
 			background: #dadada;
@@ -1532,20 +1535,20 @@ main {
 			right: -9999px;
 			top: 0;
 		}
-		
+
 		@include media("<tablet") {
 			padding-top: 9px;
 			max-width: 240px;
-			
+
 			&:before {
 				left: -9999px;
 			}
 		}
-		
+
 		mark {
 			font-size: 30px;
 			font-weight: 900;
-			
+
 			@include media("<tablet") {
 				font-size: inherit;
 			}
@@ -1557,7 +1560,7 @@ main {
 	background: $orange;
 	position: relative;
 	overflow: hidden;
-	
+
 	&:before {
 		content: '';
 		background: url(../images/bg-info-section.png) no-repeat;
@@ -1572,7 +1575,7 @@ main {
 		top: 50%;
 		transform: translateY(-50%);
 	}
-	
+
 	@include media("<tablet") {
 		&:before {
 			transform: none;
@@ -1581,47 +1584,47 @@ main {
 			background: url(../images/bg-info-section-mobile.png) no-repeat;
 		}
 	}
-	
+
 	.container {
 		position: relative;
 		z-index: 2;
 	}
-	
+
 	.heading {
 		color: $white;
 	}
-	
+
 	h1 {
 		color: $white;
-		
+
 		&:before {
 			background: $white;
 		}
 	}
-	
+
 	.holder {
 		position: relative;
 		padding: 45px 0 47px 183px;
-		
+
 		@include media("<desktop") {
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			padding: 45px 93px 47px 0;
 		}
-		
+
 		@include media("<tablet") {
 			padding: 29px 0 6px;
 			align-items: flex-start;
 		}
 	}
-	
+
 	.gif-block {
 		width: 232px;
 		position: absolute;
 		left: -25px;
 		top: -34px;
-		
+
 		@include media("<desktop") {
 			position: static;
 			left: auto;
@@ -1630,7 +1633,7 @@ main {
 			width: 270px;
 			margin: -43px -12px 0 23px;
 		}
-		
+
 		@include media("<tablet") {
 			position: relative;
 			z-index: 2;
@@ -1646,14 +1649,14 @@ main {
 	line-height: 1.4;
 	color: $white;
 	margin: 0 -22px 0 -18px;
-	
+
 	@include media("<desktop") {
 		font-size: 14px;
 		line-height: 17px;
 		max-width: 372px;
 		margin: 0 -15px -57px;
 	}
-	
+
 	@include media("<tablet") {
 		margin: 0;
 		display: flex;
@@ -1664,43 +1667,43 @@ main {
 		line-height: 19px;
 		max-width: 178px;
 	}
-	
+
 	* {
 		outline: none !important;
 	}
-	
+
 	.slick-track {
 		display: flex;
 		justify-content: space-between;
-		
+
 		@include media(">=tablet") {
 			width: auto !important;
 			transform: translate3d(0, 0, 0) !important;
 			transition: none !important;
 		}
-		
+
 		@include media("<desktop") {
 			flex-wrap: wrap;
 		}
-		
+
 		@include media("<tablet") {
 			display: block;
 		}
 	}
-	
+
 	.slick-dots {
 		display: flex !important;
 		justify-content: center;
 		width: 100%;
 		margin: 0 0 25px;
-		
+
 		@include media(">=tablet") {
 			display: none !important;
 		}
-		
+
 		li {
 			margin: 0 2px;
-			
+
 			&.slick-active,
 			&:hover {
 				button {
@@ -1709,7 +1712,7 @@ main {
 				}
 			}
 		}
-		
+
 		button {
 			display: block;
 			background: $white;
@@ -1724,23 +1727,23 @@ main {
 			transition: background 0.3s, border 0.3s;
 		}
 	}
-	
+
 	.frame {
 		width: 25%;
 		padding: 0 15px;
 		position: relative;
 		text-align: center;
-		
+
 		@include media("<desktop") {
 			width: 50%;
 			padding-bottom: 55px;
 		}
-		
+
 		@include media("<tablet") {
 			padding: 0;
 			width: 178px;
 		}
-		
+
 		&:nth-child(2) {
 			@include media("<desktop") {
 				.icon-block {
@@ -1752,7 +1755,7 @@ main {
 					}
 				}
 			}
-			
+
 			@include media("<phone") {
 				.icon-block {
 					&:before {
@@ -1761,11 +1764,11 @@ main {
 				}
 			}
 		}
-		
+
 		&:nth-child(3) {
 			@include media("<desktop") {
 				order: 4;
-				
+
 				.icon-block {
 					&:before {
 						left: auto;
@@ -1774,7 +1777,7 @@ main {
 					}
 				}
 			}
-			
+
 			@include media("<phone") {
 				.icon-block {
 					&:before {
@@ -1786,28 +1789,28 @@ main {
 				}
 			}
 		}
-		
+
 		&:nth-child(4) {
 			@include media("<desktop") {
 				order: 3;
 			}
-			
+
 			.icon-block {
 				&:before {
 					display: none;
 				}
 			}
-			
+
 			span {
 				padding: 0;
-				
+
 				@include media("<desktop") {
 					padding: 0 3%;
 				}
 			}
 		}
 	}
-	
+
 	.icon-block {
 		border-radius: 50%;
 		border: 3px solid $white;
@@ -1818,7 +1821,7 @@ main {
 		position: relative;
 		align-items: center;
 		justify-content: center;
-		
+
 		&:before {
 			content: '';
 			position: absolute;
@@ -1829,53 +1832,53 @@ main {
 			height: 23px;
 			transform: translate(11px, -50%);
 		}
-		
+
 		@include media("<widescreen") {
 			position: static;
-			
+
 			&:before {
 				width: 39px;
 				top: 61px;
 				transform: translate(-50%, 0);
 			}
 		}
-		
+
 		@include media("<desktop") {
 			width: 125px;
 			height: 125px;
 			margin-bottom: 16px;
-			
+
 			&:before {
 				width: 30px;
 				top: 51px;
 			}
 		}
-		
+
 		@include media("<tablet") {
 			width: 121px;
 			height: 121px;
 			margin-bottom: 12px;
-			
+
 			&:before {
 				display: none;
 			}
 		}
-		
+
 		img {
 			@include media("<desktop") {
 				transform: scale(0.82);
 			}
-			
+
 			@include media("<tablet") {
 				transform: scale(0.8);
 			}
 		}
 	}
-	
+
 	span {
 		display: block;
 		padding: 0 5%;
-		
+
 		@include media("<desktop") {
 			padding: 0 6%;
 		}
@@ -1888,23 +1891,23 @@ main {
 	position: relative;
 	overflow: hidden;
 	color: $white;
-	
+
 	@include media("<desktop") {
 		background-position: 50% 135px;
 		background-size: contain;
 	}
-	
+
 	@include media("<tablet") {
 		background-position: 50% 50%;
 	}
-	
+
 	@include media("<phone") {
 		background: $dark-gray url(../images/bg-cashyou-mobile.png) no-repeat 50% -28px;
 	}
-	
+
 	.h1 {
 		color: $white;
-		
+
 		&:before {
 			background: $white;
 		}
@@ -1916,25 +1919,25 @@ main {
 	align-items: center;
 	justify-content: space-between;
 	padding: 19px 0 96px;
-	
+
 	@include media("<desktop") {
 		display: block;
 		flex-direction: column;
 		padding: 39px 0 0;
 	}
-	
+
 	@include media("<tablet") {
 		padding: 3px 0 13px;
 		margin: 0 -4px;
 	}
-	
+
 	.text-block {
 		width: 45%;
 		position: relative;
 		font-size: 24px;
 		line-height: 36px;
 		padding-top: 36px;
-		
+
 		@include media("<desktop") {
 			width: 100%;
 			text-align: center;
@@ -1942,7 +1945,7 @@ main {
 			line-height: 30px;
 			padding: 0 0 27px;
 		}
-		
+
 		@include media("<tablet") {
 			font-size: 14px;
 			line-height: 23px;
@@ -1950,65 +1953,65 @@ main {
 			max-width: 298px;
 			margin: 0 auto;
 		}
-		
+
 		p {
 			margin: 0;
-			
+
 			mark {
 				font-weight: 700;
-				
+
 				@include media("<desktop") {
 					font-weight: 400;
 				}
-				
+
 				@include media("<tablet") {
 					font-size: 18px;
 				}
 			}
 		}
 	}
-	
+
 	.benefits-holder {
 		width: 51.7%;
 		display: flex;
 		margin: 0 -15px;
-		
+
 		@include media("<desktop") {
 			width: 100%;
 			justify-content: space-between;
 			margin: 0 auto 53px;
 			max-width: 698px;
 		}
-		
+
 		@include media("<tablet") {
 			margin-bottom: 8px;
 			max-width: 298px;
 		}
-		
+
 		.col {
 			width: 33.33%;
 			padding: 0 15px;
 			text-align: center;
-			
+
 			@include media("<desktop") {
 				// width: auto;
 			}
-			
+
 			@include media("<tablet") {
 				padding: 0 5px;
 			}
 		}
-		
+
 		.title {
 			display: block;
 			font-size: 24px;
 			line-height: 29px;
-			
+
 			@include media("<tablet") {
 				font-size: 14px;
 				line-height: 17px;
 			}
-			
+
 			mark {
 				display: block;
 				background: none;
@@ -2016,15 +2019,15 @@ main {
 				font-weight: 700;
 			}
 		}
-		
+
 		.image-block {
 			margin: 0 0 11px;
-			
+
 			@include media("<desktop") {
 				margin: 0 auto 12px;
 				max-width: 170px;
 			}
-			
+
 			@include media("<tablet") {
 				max-width: 110px;
 				margin: 0 auto 3px;
@@ -2037,7 +2040,7 @@ main {
 	@include media("<desktop") {
 		padding: 63px 0 101px;
 	}
-	
+
 	@include media("<tablet") {
 		padding: 16px 0 20px;
 	}
@@ -2049,14 +2052,14 @@ main {
 	position: relative;
 	margin: -7px -15px -4px;
 	padding: 69px 0 0 26%;
-	
+
 	@include media("<desktop") {
 		max-width: 636px;
 		margin: 0 auto;
 		padding: 52px 0 0;
 		align-items: stretch;
 	}
-	
+
 	@include media("<tablet") {
 		margin: -15px auto -1px;
 		padding: 0;
@@ -2069,24 +2072,24 @@ main {
 	padding: 0 15px;
 	text-align: center;
 	line-height: 1.5;
-	
+
 	&:first-child {
 		position: absolute;
 		left: 0;
 		top: 0;
 		width: 25%;
 	}
-	
+
 	@include media("<desktop") {
 		width: 50%;
 		padding: 0 45px 8px;
-		
+
 		&:first-child {
 			position: static;
 			width: 50%;
 		}
 	}
-	
+
 	@include media("<tablet") {
 		padding: 0 5px 4px;
 		font-size: 12px;
@@ -2094,51 +2097,51 @@ main {
 		display: flex;
 		flex-direction: column;
 		display: block;
-		
+
 		&:first-child {
 			justify-content: center;
 			order: 4;
 		}
 	}
-	
+
 	.gif-block {
 		margin: -11px -8px 0;
-		
+
 		@include media("<desktop") {
 			margin: -21px -35px 0 5px;
 		}
-		
+
 		@include media("<tablet") {
 			margin: -17px -15px 0;
 		}
-		
+
 		img {
 			@include media("<tablet") {
 				width: auto;
 			}
 		}
 	}
-	
+
 	.icon-block {
 		height: 140px;
 		display: flex;
 		align-items: flex-end;
 		justify-content: center;
 		margin: 0 0 24px;
-		
+
 		@include media("<tablet") {
 			height: 110px;
 			width: 189px;
 			margin: 0 -26px -5px;
 		}
-		
+
 		img {
 			@include media("<tablet") {
 				transform: scale(0.74);
 			}
 		}
 	}
-	
+
 	h2 {
 		@include media("<tablet") {
 			font-size: 14px;
@@ -2146,14 +2149,14 @@ main {
 			margin-bottom: 4px;
 		}
 	}
-	
+
 	p {
 		margin: 0;
-		
+
 		@include media("<desktop") {
 			margin: 0 23px;
 		}
-		
+
 		@include media("<tablet") {
 			margin: 0 6px;
 			position: relative;
@@ -2165,40 +2168,40 @@ main {
 .services-section {
 	background: #9cedef url(../images/bg-beach-desktop.png) repeat-x 50% 100%;
 	padding-bottom: 73px;
-	
+
 	@include media("<desktop") {
 		background-image: url(../images/bg-beach-tablet.png);
 		padding-bottom: 101px;
 	}
-	
+
 	@include media("<tablet") {
 		background-image: url(../images/bg-beach-mobile.png);
 		position: relative;
 	}
-	
+
 	.h1 {
-		
+
 		&:before {
 			background: $headings-color;
 		}
 	}
-	
+
 	.title {
 		display: block;
 		color: #1c1c1c;
 		font-size: 24px;
 		line-height: 1.21;
 		margin: 10px 0 31px 2px;
-		
+
 		@include media("<widescreen") {
 			width: 66%;
 		}
-		
+
 		@include media("<desktop") {
 			width: 44%;
 			margin: 9px 0 37px 1px;
 		}
-		
+
 		@include media("<tablet") {
 			font-size: 14px;
 			line-height: 17px;
@@ -2207,32 +2210,32 @@ main {
 			margin: -6px 0 12px;
 		}
 	}
-	
+
 	.holder {
 		@extend %clearfix;
-		
+
 		@include media("<desktop") {
 			padding-bottom: 19px;
 		}
-		
+
 		@include media("<tablet") {
 			max-width: 270px;
 			margin: 0 auto;
 		}
 	}
-	
+
 	.gif-block {
 		float: right;
 		width: 34%;
 		margin: -166px -6px 0 -50px;
-		
-		
+
+
 		@include media("<desktop") {
 			margin-top: -70px;
 			width: 50%;
 			max-width: 361px;
 		}
-		
+
 		@include media("<tablet") {
 			margin: 0;
 			float: none;
@@ -2243,20 +2246,20 @@ main {
 			margin: 0 0 0 45px;
 		}
 	}
-	
+
 	.button-block {
 		width: 65.9%;
 		margin: -78px 0 0;
-		
+
 		@include media("<widescreen") {
 			margin-top: -40px;
 		}
-		
+
 		@include media("<desktop") {
 			margin: 0;
 			max-width: 352px;
 		}
-		
+
 		@include media("<tablet") {
 			text-align: left;
 			width: auto;
@@ -2264,7 +2267,7 @@ main {
 			margin: 0 auto;
 		}
 	}
-	
+
 	.button {
 		@include media("<tablet") {
 			min-width: 176px;
@@ -2280,43 +2283,43 @@ main {
 	margin: 0 -15px;
 	position: relative;
 	z-index: 5;
-	
+
 	@include media("<widescreen") {
 		margin: 0 -5px;
 	}
-	
+
 	@include media("<desktop") {
 		margin: 0 -9px;
 		max-width: 370px;
 		width: auto;
 	}
-	
+
 	@include media("<tablet") {
 		float: none;
 		width: auto;
 		margin: 0 -5px 11px;
 		max-width: 300px;
 	}
-	
+
 	li {
 		width: 25%;
 		padding: 0 15px;
 		display: flex;
-		
+
 		@include media("<widescreen") {
 			padding: 0 5px;
 		}
-		
+
 		@include media("<desktop") {
 			width: 50%;
 			padding: 0 10px 20px;
 		}
-		
+
 		@include media("<tablet") {
 			padding: 0 4px 10px;
 		}
 	}
-	
+
 	.block {
 		width: 100%;
 		text-align: center;
@@ -2330,7 +2333,7 @@ main {
 		padding: 11px 5px 17px;
 		box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
 		letter-spacing: -0.2px;
-		
+
 		@include media("<tablet") {
 			font-size: 10px;
 			line-height: 13px;
@@ -2338,22 +2341,22 @@ main {
 			letter-spacing: -0.4px;
 		}
 	}
-	
+
 	.icon-block {
 		height: 100px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		margin: 0 0 7px;
-		
+
 		@include media("<tablet") {
 			height: 81px;
 			margin-bottom: 4px;
 		}
-		
+
 		img {
 			transform: scale(0.8);
-			
+
 			@include media("<tablet") {
 				transform: scale(0.645);
 			}
@@ -2367,34 +2370,34 @@ main {
 		align-items: center;
 		margin: 0 -34px 0 6px;
 		padding: 12px 0 18px;
-		
+
 		@include media("<desktop") {
 			justify-content: center;
 			padding: 34px 7% 45px 7.5%;
 			margin: 0;
 		}
-		
+
 		@include media("<tablet") {
 			padding: 0;
 			align-items: flex-end;
 		}
-		
+
 		.gif-block {
 			width: 210px;
 			margin: -44px 0 0 26px;
-			
+
 			@include media("<desktop") {
 				width: 242px;
 				margin: 0 0 0 -10px;
 			}
-			
+
 			@include media("<tablet") {
 				width: 140px;
 				margin: 0 -27px 0 0;
 			}
 		}
 	}
-	
+
 	.documents-list {
 		font-size: 20px;
 		line-height: 1.4;
@@ -2402,7 +2405,7 @@ main {
 		margin-top: -24px;
 		width: 82.6%;
 		justify-content: space-between;
-		
+
 		@include media("<desktop") {
 			justify-content: center;
 			width: auto;
@@ -2410,68 +2413,68 @@ main {
 			font-size: 18px;
 			line-height: 21px;
 		}
-		
+
 		@include media("<tablet") {
 			width: 203px;
 			font-size: 12px;
 			line-height: 15px;
 			margin: -9px -15px 0 -13px;
 		}
-		
+
 		li {
 			width: 20%;
-			
+
 			@include media("<desktop") {
 				width: 50%;
 				padding-bottom: 10px;
 			}
-			
+
 			@include media("<tablet") {
 				padding-bottom: 9px;
 			}
 		}
-		
+
 		.image-block {
 			height: 120px;
 			margin-bottom: 17px;
-			
+
 			@include media("<desktop") {
 				margin-bottom: 12px;
 			}
-			
+
 			@include media("<tablet") {
 				margin: 0 -15px 9px;
 				width: 121px;
 				height: 75px;
 			}
-			
+
 			img {
 				@include media("<tablet") {
 					transform: scale(0.63);
 				}
 			}
 		}
-		
+
 		span {
 			@include media("<desktop") {
 				padding: 0 15px;
 			}
-			
+
 			@include media("<tablet") {
 				padding: 0;
 			}
 		}
 	}
-	
+
 	.note-block {
 		@extend %clearfix;
-		
+
 		@include media("<desktop") {
 			font-size: 20px;
 			line-height: 27px;
 			padding-bottom: 56px;
 		}
-		
+
 		@include media("<tablet") {
 			font-size: 14px;
 			line-height: 17px;
@@ -2480,22 +2483,22 @@ main {
 			margin: 0 auto;
 			position: relative;
 		}
-		
+
 		span {
 			@include media("<desktop") {
 				padding-top: 38px;
 				max-width: 668px;
 			}
-			
+
 			@include media("<tablet") {
 				padding-top: 18px;
 			}
-			
+
 			mark {
 				@include media("<desktop") {
 					font-size: 24px;
 				}
-				
+
 				@include media("<tablet") {
 					font-size: 14px;
 				}
@@ -2507,19 +2510,19 @@ main {
 .about-section {
 	background: #efefef;
 	color: $gray;
-	
+
 	.text-block {
 		padding: 36px 0 84px;
-		
+
 		@include media("<desktop") {
 			padding-bottom: 35px;
 		}
-		
+
 		@include media("<tablet") {
 			padding: 4px 0 29px;
 		}
 	}
-	
+
 	p {
 		margin: 0;
 	}
@@ -2534,22 +2537,22 @@ main {
 		  height: 300px;
 		}
 	}
-	
+
 
 	.h1 {
 		&:before {
 			background: $dark-gray;
 		}
 	}
-	
+
 	.text-block {
 		padding: 32px 0 41px;
 		padding-right: 40px;
-		
+
 		@include media("<desktop") {
 			padding-bottom: 35px;
 		}
-		
+
 		@include media("<tablet") {
 			padding: 2px 0 24px;
 			padding-right: 20px;
@@ -2564,7 +2567,7 @@ main {
 			margin-bottom: 15px;
 		}
 	}
-	
+
 	p {
 		margin: 0;
 	}
@@ -2573,40 +2576,40 @@ main {
 .tags {
 	padding: 0 6% 0 0;
 	margin: 15px 0 -11px;
-	
+
 	@include media("<desktop") {
 		padding: 0;
 	}
-	
+
 	@include media("<tablet") {
 		font-size: 12px;
 		line-height: 16px;
 		padding: 0 2px;
 		margin: 0 -3px -10px -4px;
 	}
-	
+
 	li {
 		display: inline-block;
 		vertical-align: top;
 		margin: 0 3px 10px 0;
-		
+
 		@include media("<tablet") {
 			margin: 0 3px 10px 4px;
 		}
 	}
-	
+
 	a {
 		display: block;
 		background: $white;
 		color: $gray;
 		padding: 3px 21px;
 		transition: color 0.3s, background 0.3s;
-		
+
 		&:hover {
 			background: $orange;
 			color: $white;
 		}
-		
+
 		@include media("<tablet") {
 			padding: 1px 14px 3px;
 		}
@@ -2638,7 +2641,7 @@ main {
 				font-size: 14px;
 				display: flex;
 				align-items: center;
-				align-content: center; 
+				align-content: center;
 				justify-content: center;
 				padding: 3px 10px;
 				height: 100%;
@@ -3378,7 +3381,7 @@ main {
 			max-height: 50px;
 			overflow: visible;
 		}
-		
+
 		@include media("<desktop") {
 			font-size: 16px;
 		}
@@ -3421,16 +3424,16 @@ main {
 		}
 	}
 
-	.jcf-file .jcf-upload-button.upload-error-button, .jcf-file[class^="jcf-extension-"] .jcf-upload-button.upload-error-button, .jcf-file[class*=" jcf-extension-"] .jcf-upload-button.upload-error-button {		
+	.jcf-file .jcf-upload-button.upload-error-button, .jcf-file[class^="jcf-extension-"] .jcf-upload-button.upload-error-button, .jcf-file[class*=" jcf-extension-"] .jcf-upload-button.upload-error-button {
 		background: $red;
 		border-color: $red;
-		color: white;			
+		color: white;
 	}
 
-	.jcf-file .jcf-upload-button.upload-success-button, .jcf-file[class^="jcf-extension-"] .jcf-upload-button.upload-success-button, .jcf-file[class*=" jcf-extension-"] .jcf-upload-button.upload-success-button {		
+	.jcf-file .jcf-upload-button.upload-success-button, .jcf-file[class^="jcf-extension-"] .jcf-upload-button.upload-success-button, .jcf-file[class*=" jcf-extension-"] .jcf-upload-button.upload-success-button {
 		background: $light-green;
 		border-color: $light-green;
-		color: white;			
+		color: white;
 	}
 }
 
@@ -3994,12 +3997,12 @@ main {
 				transition: 0.5s;
 			}
 
-			input[type=number]::-webkit-inner-spin-button, 
-			input[type=number]::-webkit-outer-spin-button { 
+			input[type=number]::-webkit-inner-spin-button,
+			input[type=number]::-webkit-outer-spin-button {
 			    -webkit-appearance: none;
 			    -moz-appearance: none;
 			    appearance: none;
-			    margin: 0; 
+			    margin: 0;
 			}
 
 			input[type='number'] {
@@ -4505,7 +4508,7 @@ main {
 
 .indicator-holder {
 	flex-grow: 1;
-	
+
 	@include media("<tablet") {
 		width: 50%;
 	}
@@ -4522,39 +4525,39 @@ main {
 	display: flex;
 	justify-content: center;
 	box-shadow: 0 4px 4px rgba($black, 0.1);
-	
+
 	@include media("<desktop") {
 		padding: 9px 16px 3px 10px;
 	}
-	
+
 	@include media("<tablet") {
 		margin: 0;
 		padding: 5px 13px 8px 9px;
 		height: 100%;
 		align-items: flex-end;
 	}
-	
+
 	.text-area {
 		max-width: 75px;
 		text-align: right;
-		
+
 		@include media("<tablet") {
 			text-align: center;
 			letter-spacing: -0.04em;
 		}
-		
+
 		p {
 			margin: 0;
 		}
 	}
-	
+
 	.indicator-percent {
 		display: block;
 		margin: 4px 0 0;
 		font-size: 30px;
 		line-height: 1.2;
 		font-weight: 900;
-		
+
 		@include media("<tablet") {
 			position: absolute;
 			right: 50%;
@@ -4563,25 +4566,25 @@ main {
 			font-size: 25px;
 		}
 	}
-	
+
 	.indicator {
 		width: 14px;
 		height: 73px;
 		margin: 3px 0 0 14px;
 		position: relative;
 		background: $dark-gray;
-		
+
 		@include media("<desktop") {
 			margin-left: 10px;
 		}
-		
+
 		@include media("<tablet") {
 			width: 54px;
 			height: 10px;
 			margin: 0 0 1px 4px;
 		}
 	}
-	
+
 	.indicator-list {
 		position: absolute;
 		bottom: 3px;
@@ -4589,7 +4592,7 @@ main {
 		right: 3px;
 		display: flex;
 		flex-direction: column-reverse;
-		
+
 		@include media("<tablet") {
 			bottom: 2px;
 			top: 2px;
@@ -4597,18 +4600,18 @@ main {
 			right: auto;
 			flex-direction: row;
 		}
-		
+
 		li {
 			background: #818181;
 			width: 100%;
 			height: 4px;
 			margin: 3px 0 0;
-			
+
 			&.active,
 			&.passed {
 				background: $white;
 			}
-			
+
 			@include media("<tablet") {
 				height: 100%;
 				width: 3px;
@@ -4620,7 +4623,7 @@ main {
 
 .chat-holder {
 	text-align: center;
-	
+
 	.callback-opener{
 		span{
 			display: flex;
@@ -4628,8 +4631,8 @@ main {
 			align-items: center;
 			justify-content: center;
 		}
-	} 
-	
+	}
+
 	@include media("<tablet") {
 		width: 25%;
 	}
@@ -4638,13 +4641,13 @@ main {
 .callback-block {
 	position: relative;
 	margin: 0 0 19px;
-	
+
 	@include media("<tablet") {
 		margin: -2px 0 0;
 		padding: 5px 0 0;
 		border-top: 2px solid $orange;
 	}
-	
+
 	.callback-opener {
 		display: block;
 		width: 85px;
@@ -4659,15 +4662,15 @@ main {
 		// box-shadow: 0 0 0 2px rgba($btn-background, 0.5);
 		margin: 0 auto;
 		transition: border 0.3s;
-		
+
 		&:hover {
 			border-color: rgba($btn-background, 1);
-			
+
 			span {
 				background: darken($btn-background, 7%);
 			}
 		}
-		
+
 		@include media("<tablet") {
 			width: 48px;
 			height: 48px;
@@ -4675,7 +4678,7 @@ main {
 			line-height: 42px;
 			font-size: 22px;
 		}
-		
+
 		span {
 			display: block;
 			height: 100%;
@@ -4684,7 +4687,7 @@ main {
 			transition: background 0.3s;
 		}
 	}
-	
+
 	.callback-popup {
 		position: absolute;
 		height: 85px;
@@ -4698,7 +4701,7 @@ main {
 		border-radius: 36px;
 		z-index: 1110;
 		display: none;
-		
+
 		@include media("<tablet") {
 			position: fixed;
 			height: auto;
@@ -4717,23 +4720,23 @@ main {
 			z-index: 102;
 			transform: translate(-50%, -50%);
 		}
-		
+
 		form {
 			display: flex;
 			align-items: flex-start;
 			justify-content: center;
-			
+
 			@include media("<tablet") {
 				display: block;
 			}
-			
+
 			label {
 				font-size: 14px;
 				line-height: 1.21;
 				letter-spacing: 0.07em;
 				width: 190px;
 				margin: -4px 10px 0 0;
-				
+
 				@include media("<tablet") {
 					width: auto;
 					display: block;
@@ -4742,20 +4745,20 @@ main {
 					letter-spacing: 0;
 				}
 			}
-			
+
 			input[type="tel"] {
 				margin: 0 -1px 0 0;
 				width: 243px;
 				height: 40px;
 				line-height: 22px;
 				padding: 8px 16px;
-				
+
 				@include media("<tablet") {
 					width: 100%;
 					margin: 0 0 15px;
 				}
 			}
-			
+
 			.button {
 				font-weight: 400;
 				min-width: 153px;
@@ -4763,7 +4766,7 @@ main {
 				height: 40px;
 				padding: 7px 8px;
 				letter-spacing: 0.02em;
-				
+
 				@include media("<tablet") {
 					width: 100%;
 					font-weight: 900;
@@ -4772,7 +4775,7 @@ main {
 			}
 		}
 	}
-	
+
 	.callback-close {
 		position: absolute;
 		right: 0;
@@ -4783,17 +4786,17 @@ main {
 		height: 27px;
 		top: -2px;
 		right: -1px;
-		
+
 		@include media("<tablet") {
 			right: 5px;
 			top: 5px;
 		}
-		
+
 		i {
 			display: block;
 			position: relative;
 			z-index: 2;
-			
+
 			&:after {
 				content: '';
 				background: $white;
@@ -4813,7 +4816,7 @@ main {
 	@include media("<tablet") {
 		display: none;
 	}
-	
+
 	.chat-opener {
 		display: block;
 		background: $btn-background;
@@ -4827,7 +4830,7 @@ main {
 		margin: 0 -14px;
 		border-radius: 9px 9px 0 0;
 		transition: background 0.3s;
-		
+
 		&:hover {
 			background: darken($btn-background, 7%);
 		}
@@ -4837,11 +4840,11 @@ main {
 .step-block {
 	display: none;
 	// display: none !important;
-	// 
+	//
 	// &[data-step = "5"] {
 	// 	display: block !important;
 	// }
-	
+
 	&.active {
 		display: block;
 	}
@@ -4852,7 +4855,7 @@ main {
 	max-height: 0;
 	// overflow: hidden;
 	transition: max-height .3s, opacity .3s;
-	
+
 	&.selected {
 		opacity: 1;
 		max-height: 2000px;
@@ -5129,7 +5132,7 @@ main {
 		@include media("<tablet") {
 			max-width: 300px;
 			margin-top: 25px;
-			margin-bottom: 0; 
+			margin-bottom: 0;
 		}
 
 		li{
@@ -5238,7 +5241,7 @@ main {
 		margin: 0 auto;
 		display: flex;
 		flex-direction: row;
-		padding-top: 20px; 
+		padding-top: 20px;
 
 		@include media("<tablet") {
 			flex-direction: column;
@@ -5313,7 +5316,7 @@ main {
 	}
 }
 
-#telegramActivity {	
+#telegramActivity {
 	height: 0;
 	overflow: hidden;
 	visibility: hidden;
@@ -5388,10 +5391,10 @@ main {
 		}
 
 		.contacts-block {
-			padding-bottom: 30px; 
+			padding-bottom: 30px;
 
 			@include media("<tablet") {
-				padding-bottom: 15px; 
+				padding-bottom: 15px;
 			}
 		}
 
@@ -5435,16 +5438,16 @@ main {
 	@include media("<desktop") {
 		margin: -1px 0 0;
 	}
-	
+
 	.container {
 		display: flex;
 		align-items: flex-start;
 		justify-content: space-between;
-		
+
 		&:after {
 			display: none;
 		}
-		
+
 		@include media("<tablet") {
 			display: block;
 		}
@@ -5454,11 +5457,11 @@ main {
 .tabset-holder {
 	width: 14.4%;
 	padding-bottom: 30px;
-	
+
 	@include media("<desktop") {
 		width: 30.5%;
 	}
-	
+
 	@include media("<tablet") {
 		padding: 0;
 		width: 100%;
@@ -5471,7 +5474,7 @@ main {
 		transition: max-height 0.3s linear 0s;
 		z-index: 50;
 		top: 56px;
-		
+
 		.profile-active & {
 			max-height: 4000px;
 		}
@@ -5483,17 +5486,17 @@ main {
 	line-height: 1.2;
 	font-weight: 900;
 	box-shadow: 0 2px 2px rgba($black, 0.11);
-	
+
 	@include media("<tablet") {
 		transform: translateY(-100%);
 		transition: transform 0.3s linear 0s;
-		
+
 		.profile-active & {
 			transform: translateY(0);
 			box-shadow: 0 5px 5px rgba($black, 0.3);
 		}
 	}
-	
+
 	li {
 		&.active {
 			a {
@@ -5503,7 +5506,7 @@ main {
 			}
 		}
 	}
-	
+
 	a {
 		display: flex;
 		align-items: center;
@@ -5515,12 +5518,12 @@ main {
 		color: $base-text-color;
 		box-shadow: 0 4px 3px -3px rgba(0, 0, 0, 0.15) inset;
 		transition: background 0.3s, color 0.3s;
-		
+
 		&:hover {
 			background: $orange;
 			color: $white;
 		}
-		
+
 		@include media("<tablet") {
 			height: 53px;
 		}
@@ -5531,24 +5534,24 @@ main {
 	width: 82.9%;
 	position: relative;
 	padding: 0 0 5px;
-	
+
 	@include media("<desktop") {
 		width: 65%;
 	}
-	
+
 	@include media("<tablet") {
 		width: auto;
 		padding-bottom: 0;
 	}
-	
+
 	.heading-area {
 		padding: 0 0 9px;
-		
+
 		@include media("<tablet") {
 			padding-bottom: 8px;
 		}
 	}
-	
+
 	h2 {
 		display: inline-block;
 		vertical-align: top;
@@ -5556,12 +5559,12 @@ main {
 		padding: 0 0 2px;
 		font-weight: 400;
 		border-bottom: 2px solid $orange;
-		
+
 		@include media("<tablet") {
 			padding-bottom: 3px;
 		}
 	}
-	
+
 	.note-text {
 		text-transform: uppercase;
 		display: block;
@@ -5570,12 +5573,12 @@ main {
 		line-height: 1.22;
 		font-weight: 900;
 		margin-bottom: 23px;
-		
+
 		@include media("<desktop") {
 			font-size: 14px;
 			margin: -13px 0 23px;
 		}
-		
+
 		@include media("<tablet") {
 			font-size: 12px;
 			line-height: 14px;
@@ -5589,40 +5592,40 @@ main {
 .client-columns {
 	display: flex;
 	margin: 0 -15px;
-	
+
 	@include media("<desktop") {
 		margin: 0;
 		display: block;
 	}
-	
+
 	.column {
 		width: 50%;
 		padding: 0 15px;
-		
+
 		@include media("<desktop") {
 			width: auto;
 			padding: 0;
 		}
 	}
-	
+
 	.info-block {
 		height: 235px;
 		text-align: left;
 		padding: 0;
 		box-shadow: 0 2px 4px rgba($black, 0.1);
-		
+
 		@include media("<tablet") {
 			max-width: 450px;
 			margin-left: auto;
 			margin-right: auto;
 		}
-		
+
 		.btn-get-info {
 			@include media("<desktop") {
 				width: 83%;
 				bottom: 20px;
 			}
-			
+
 			@include media("<tablet") {
 				width: 100%;
 			}
@@ -5635,18 +5638,18 @@ main {
 		display: flex;
 		margin: 0 -14px;
 	}
-	
+
 	@include media("<tablet") {
 		display: block;
 		margin: -31px 0 32px;
 	}
-	
+
 	.column {
 		@include media("<desktop") {
 			padding: 0 14px;
 			width: 50%;
 		}
-		
+
 		@include media("<tablet") {
 			padding: 0;
 			width: auto;
@@ -5659,39 +5662,39 @@ main {
 		align-items: center;
 		padding-top: 12px;
 		padding-bottom: 15px;
-		
+
 		@include media("<widescreen") {
 			padding: 12px 10px 15px;
 		}
-		
+
 		@include media("<desktop") {
 			display: block;
 			padding: 16px 10px 12px;
 		}
-		
+
 		@include media("<tablet") {
 			margin: 0 -15px;
 			padding: 42px 15px 16px;
 		}
-		
+
 		.heading-area {
 			width: 28%;
 			padding: 0;
-			
+
 			@include media("<widescreen") {
 				width: 34%;
 			}
-			
+
 			@include media("<desktop") {
 				width: 100%;
 				padding-bottom: 10px;
 			}
-			
+
 			@include media("<tablet") {
 				padding-bottom: 26px;
 			}
 		}
-		
+
 		h2 {
 			padding: 0 5px;
 			margin: 0;
@@ -5699,56 +5702,56 @@ main {
 			line-height: 1.28;
 			border: solid $orange;
 			border-width: 0 2px 0 0;
-			
+
 			@include media("<desktop") {
 				border-width: 0 0 2px;
 				padding: 0 0 6px;
 				font-size: 20px;
 				line-height: 1.15;
 			}
-			
+
 			@include media("<tablet") {
 				font-size: 18px;
 				padding-bottom: 3px;
 			}
-			
+
 			b {
 				@include media("<desktop") {
 					display: block;
 				}
-				
+
 				@include media("<tablet") {
 					display: inline;
 				}
 			}
 		}
-		
+
 		.bonuses-number {
 			width: 70%;
 			margin: 0;
 			text-align: center;
-			
+
 			@include media("<widescreen") {
 				width: 66%;
 			}
-			
+
 			@include media("<desktop") {
 				width: 100%;
 				font-size: 24px;
 			}
-			
+
 			@include media("<tablet") {
 				font-size: 28px;
 				margin-bottom: 9px;
 			}
-			
+
 			mark {
 				@include media("<desktop") {
 					font-size: 36px;
 					display: block;
 					margin-bottom: -8px;
 				}
-				
+
 				@include media("<tablet") {
 					display: inline;
 					margin: 0;
@@ -5757,17 +5760,17 @@ main {
 			}
 		}
 	}
-	
+
 	.bonuses-list {
 		width: 69%;
 		padding: 0 3% 0 0;
 		margin: -7px 0 -6px;
-		
+
 		@include media("<widescreen") {
 			width: 66%;
 			padding: 0;
 		}
-		
+
 		@include media("<desktop") {
 			margin: -2px -6px 0;
 			padding: 0;
@@ -5775,39 +5778,39 @@ main {
 			display: flex;
 			justify-content: center;
 		}
-		
+
 		@include media("<tablet") {
 			margin-top: -10px;
 		}
-		
+
 		li {
 			@include media("<desktop") {
 				padding: 0 3px;
 			}
 		}
-		
+
 		strong {
 			font-size: 14px;
 			text-transform: uppercase;
-			
+
 			@include media("<desktop") {
 				font-size: 12px;
 			}
-			
+
 			@include media("<tablet") {
 				font-size: 14px;
 			}
 		}
-		
+
 		.gif-block {
 			margin: 0 auto;
 			max-width: 62px;
-			
+
 			@include media("<desktop") {
 				max-width: 56px;
 				margin-bottom: 4px;
 			}
-			
+
 			@include media("<tablet") {
 				max-width: 82px;
 				margin-bottom: 9px;
@@ -5821,26 +5824,26 @@ main {
 	margin: 0 0 30px;
 	padding: 15px 20px 20px;
 	box-shadow: 0 2px 2px rgba($black, 0.1);
-	
+
 	@include media("<desktop") {
 		padding: 15px 31px 20px;
 	}
-	
+
 	@include media("<tablet") {
 		padding: 20px 15px 20px;
 		margin: 0 -15px 30px;
 	}
-	
+
 	.head-title {
 		display: block;
 		font-weight: 900;
 		letter-spacing: 1px;
 		margin-bottom: 24px;
-		
+
 		@include media("<desktop") {
 			letter-spacing: 0;
 		}
-		
+
 		@include media("<tablet") {
 			letter-spacing: 0.8px;
 			font-size: 14px;
@@ -5848,29 +5851,29 @@ main {
 			margin-bottom: 23px;
 		}
 	}
-	
+
 	.text-frame {
 		line-height: 1.22;
 		padding: 20px 12px 0;
 		margin-bottom: -48px;
 		letter-spacing: 0.1px;
-		
+
 		@include media("<tablet") {
 			padding: 0;
 		}
-		
+
 		p {
 			margin-bottom: 21px;
-			
+
 			@include media("<tablet") {
 				margin-bottom: 10px;
 			}
 		}
 	}
-	
+
 	.button {
 		min-width: 165px;
-		
+
 		@include media("<tablet") {
 			min-width: 0;
 			max-width: 290px;
@@ -5879,36 +5882,36 @@ main {
 			display: block;
 		}
 	}
-	
+
 	.intro-section {
 		background: none;
 		margin: 0;
 		padding: 10px 0 0;
-		
+
 		@include media("<tablet") {
 			padding-top: 3px;
 		}
-		
+
 		.col-credit-form {
 			padding: 50px 12px 0;
 			width: 100%;
-			
+
 			@include media("<desktop") {
 				padding: 50px 5px 0;
 			}
-			
+
 			@include media("<tablet") {
 				padding: 52px 0 0;
-			}	
+			}
 		}
-		
+
 		.row {
 			margin-bottom: 38px;
 			flex-wrap: wrap;
 			&.modified {
 				margin-bottom: 0;
 			}
-			
+
 			.title {
 				float: none;
 				width: 100%;
@@ -5921,40 +5924,40 @@ main {
 				}
 			}
 		}
-		
+
 		.line {
 			width: 100%;
 			padding-left: 0;
-			
+
 			@include media("<desktop") {
 				padding: 0;
 			}
-			
+
 			@include media("<tablet") {
 				padding: 0 12px;
 			}
 		}
-		
+
 		.line-slider {
 			padding: 0 15px;
 		}
-		
+
 		.ui-slider-range {
 			margin: -1px -10px 0;
 		}
-		
+
 		.ui-slider-handle {
 			margin-left: -10px;
 			width: 20px;
 			height: 20px;
 			top: -10px;
-			
+
 			&:after {
 				width: 6px;
 				height: 6px;
 			}
 		}
-		
+
 		.minus-slider2, .minus-slider1,
 		.plus-slider2, .plus-slider1 {
 			width: 17px;
@@ -5962,7 +5965,7 @@ main {
 			bottom: -8px;
 			left: -12px;
 			line-height: 16px;
-			
+
 			&:before,
 			&:after {
 				width: 7px;
@@ -5970,59 +5973,59 @@ main {
 				margin-top: 8px;
 			}
 		}
-		
+
 		.plus-slider2,
 		.plus-slider1 {
 			font-size: 16px;
 			line-height: 17px;
 			left: auto;
 			right: -12px;
-			
-			&:before,	
+
+			&:before,
 			&:after {
 				height: 1px;
 				width: 9px;
 			}
-			
+
 			&:after {
 				height: 9px;
 				width: 1px;
 				margin-top: -5px;
 			}
 		}
-		
+
 		.total-line {
 			margin: 0 auto;
 			padding: 0 7.4%;
 			max-width: 394px;
 			margin-top: 38px;
-			
+
 			@include media("<desktop") {
 				padding: 0 31px;
 			}
-			
+
 			@include media("<tablet") {
 				padding: 6px 0 0;
 				max-width: 290px;
 			}
 		}
-		
+
 		.total-info {
 			float: none;
 			width: auto;
 			display: flex;
 			justify-content: space-between;
 			margin-bottom: 29px;
-			
+
 			&:before {
 				left: -7px;
 				right: -7px;
 				border-width: 4px 7px 0;
 			}
-			
+
 			@include media("<tablet") {
 				margin: 0 10px 32px;
-				
+
 				&:before {
 					left: -10px;
 					right: -10px;
@@ -6030,59 +6033,59 @@ main {
 				}
 			}
 		}
-		
+
 		.total-titles {
 			width: 50%;
 			float: none;
-			
+
 			@include media("<tablet") {
 				padding-top: 3px;
 				width: 50.6%;
 			}
-			
+
 			span {
 				padding-bottom: 4px;
-				
+
 				@include media("<tablet") {
 					padding-bottom: 6px;
 				}
 			}
-			
+
 			b {
 				margin-top: -2px;
 			}
 		}
-		
+
 		.total-values {
 			float: none;
 			width: 44.3%;
-			
+
 			@include media("<tablet") {
 				width: 43%;
 			}
 		}
-		
+
 		.l-wrap {
 			b.expired-date {
 				margin-top: 0;
 			}
-			
+
 			span.currency {
 				padding-top: 7px;
 				padding-left: 9px;
 			}
 		}
-		
+
 		.button-frame {
 			padding: 20px 0 0;
 			margin: 0 -8px;
-			
+
 			@include media("<tablet") {
 				padding: 0;
 				margin: 0;
 			}
 		}
-		
+
 		.btn-get {
 			font-weight: 500;
 			float: none;
@@ -6103,82 +6106,82 @@ main {
 		padding: 20px 10px;
 		color: #854B27
 	}
-	
+
 	.bonuses-number {
 		display: block;
 		font-size: 28px;
 		margin: 15px 0 25px;
-		
+
 		@include media("<tablet") {
 			margin: 22px 0 50px;
 		}
-		
+
 		mark {
 			font-size: 48px;
 			font-weight: 900;
 		}
 	}
-	
+
 	.deal-text {
 		font-size: 14px;
 		line-height: 1.29;
 		text-align: left;
 		padding: 20px 0 0;
-		
+
 		@include media("<desktop") {
 			padding-top: 10px;
 		}
-		
+
 		p {
 			margin: 0;
 		}
 	}
-	
+
 	.download-holder {
 		max-width: 100%;
 		margin: 0 auto;
 		padding: 0;
-		
+
 		@include media("<desktop") {
 			max-width: none;
 			margin: 0 -12px;
 		}
-		
+
 		@include media("<tablet") {
 			padding: 0;
 			margin: -20px auto 13px;
 			max-width: 290px;
 		}
-		
+
 		.heading-area,
 		.note-text {
 			text-align: left;
-			
+
 			@include media("<desktop") {
 				text-align: center;
 			}
 		}
 	}
-	
+
 	.download-row {
 		padding-bottom: 32px;
-		
+
 		@include media("<desktop") {
 			padding-bottom: 30px;
 		}
-		
+
 		@include media("<tablet") {
 			padding-bottom: 17px;
 		}
-		
+
 		div {
 			font-size: 18px;
-			
+
 			@include media("<desktop") {
 				font-size: 18px;
 				line-height: 1.22;
 			}
-			
+
 			@include media("<tablet") {
 				font-size: 14px;
 				line-height: 18px;
@@ -6186,7 +6189,7 @@ main {
 				margin-bottom: 5px;
 			}
 		}
-		
+
 		.jcf-file {
 			@include media("<desktop") {
 				min-width: 111px;
@@ -6197,21 +6200,21 @@ main {
 
 .deal-columns {
 	@extend .client-columns;
-	
+
 	@include media("<desktop") {
 		display: flex;
 		margin: 0 -15px;
 	}
-	
+
 	@include media("<tablet") {
 		display: block;
 		margin: 0;
 	}
-	
+
 	.deal-block {
 		width: calc(50% - 30px);
 		margin: 0 15px 30px;
-		
+
 		@include media("<tablet") {
 			width: auto;
 			margin: 0 -15px 20px;
@@ -6222,28 +6225,28 @@ main {
 .deal-block {
 	background: $white;
 	line-height: 22px;
-	
+
 	@include media("<desktop") {
 		padding: 15px 15px 20px;
 	}
-	
+
 	@include media("<tablet") {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 	}
-	
+
 	.image-block {
 		margin: -15px -20px 26px;
-		
+
 		@include media("<desktop") {
 			margin: -15px -15px 29px;
 		}
-		
+
 		@include media("<tablet") {
 			margin-bottom: 16px;
 		}
-		
+
 		img {
 			@include media("<tablet") {
 				max-width: 400px;
@@ -6252,7 +6255,7 @@ main {
 			}
 		}
 	}
-	
+
 	h2 {
 		display: block;
 		border: none;
@@ -6264,40 +6267,40 @@ main {
 		font-size: 18px;
 		line-height: 22px;
 		text-transform: uppercase;
-		
+
 		@include media("<desktop") {
 			margin-bottom: 10px;
 		}
-		
+
 		a {
 			color: $base-text-color;
-			
+
 			&:hover {
 				color: $base-link-color;
 			}
 		}
 	}
-	
+
 	.date {
 		display: block;
 		font-size: 12px;
 		text-transform: uppercase;
 		margin: 0 0 23px;
-		
+
 		@include media("<desktop") {
 			margin-bottom: 12px;
 		}
-		
+
 		@include media("<tablet") {
 			margin-bottom: 10px;
 		}
 	}
-	
+
 	p {
 		text-align: left;
 		letter-spacing: 0.025em;
 		margin-bottom: 25px;
-		
+
 		@include media("<tablet") {
 			max-width: 290px;
 			width: 100%;
@@ -6310,83 +6313,83 @@ main {
 .data-holder {
 	font-size: 14px;
 	margin: -8px 0 37px;
-	
+
 	&:last-child {
 		margin-bottom: 21px;
 	}
-	
+
 	@include media("<desktop") {
 		margin: -11px 0 42px;
-		
+
 		&:last-child {
 			margin-bottom: 11px;
 		}
 	}
-	
+
 	@include media("<tablet") {
 		margin: -6px 0 30px;
-		
+
 		&:last-child {
 			margin-bottom: 5px;
 		}
 	}
-	
+
 	.row {
 		padding: 22px 0 2px;
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
 		border-bottom: 1px solid $light-gray;
-		
+
 		@include media("<desktop") {
 			padding-top: 35px;
 		}
-		
+
 		@include media("<tablet") {
 			padding-top: 22px;
 		}
 	}
-	
+
 	.name {
 		width: 50%;
 		text-align: left;
 		margin: 0 0 3px;
 		font-weight: 400;
-		
+
 		@include media("<tablet") {
 			margin: 0;
 			// width: 55%;
 			width: auto;
 		}
 	}
-	
+
 	.data-block {
 		width: 50%;
 		text-align: right;
-		
+
 		@include media("<tablet") {
 			// width: 45%;
 			width: auto;
 		}
-		
+
 		b {
 			font-size: 24px;
 			font-weight: 900;
 			margin: 0 7px 0 0;
-			
+
 			&:last-child {
 				margin-right: 0;
 			}
 		}
-		
+
 		i {
 			font-style: normal;
 		}
-		
+
 		span {
 			font-size: 16px;
 			font-weight: 900;
-			
+
 			@include media("<tablet") {
 				font-size: 12px;
 			}
@@ -6403,30 +6406,30 @@ main {
 	display: flex;
 	justify-content: center;
 	margin: 0 -10px 52px;
-	
+
 	@include media("<desktop") {
 		margin: 0 -30px 52px;
 	}
-	
+
 	@include media("<tablet") {
 		margin: 0 -10px 39px;
 	}
-	
+
 	li {
 		width: 33.33%;
 		padding: 0 10px;
 		max-width: 146px;
-		
+
 		@include media("<desktop") {
 			max-width: 156px;
 		}
-		
+
 		@include media("<tablet") {
 			padding: 0 5px;
 			max-width: 104px;
 		}
 	}
-	
+
 	span {
 		display: block;
 		font-size: 14px;
@@ -6434,11 +6437,11 @@ main {
 		font-weight: 900;
 		letter-spacing: 0.06em;
 		margin-bottom: 19px;
-		
+
 		@include media("<desktop") {
 			margin-bottom: 20px;
 		}
-		
+
 		@include media("<tablet") {
 			font-size: 11px;
 			line-height: 15px;
@@ -6446,16 +6449,16 @@ main {
 			min-height: 60px;
 		}
 	}
-	
+
 	.gif-block {
 		max-width: 136px;
 		margin: 0 -5px 16px;
-		
+
 		@include media("<desktop") {
 			margin: 0 0 17px;
 			max-width: 146px;
 		}
-		
+
 		@include media("<tablet") {
 			margin-bottom: 7px;
 		}
@@ -6503,7 +6506,7 @@ main {
 		font-size: 24px;
 		line-height: 1.2;
 		font-weight: 900;
-		
+
 		@include media("<tablet") {
 			font-size: 18px;
 		}
@@ -6515,13 +6518,13 @@ main {
 	right: 70px;
 	bottom: 150px;
 	z-index: 999;
-	
+
 	@include media(">tablet") {
 		.callback-popup {
 			top: 0!important;
 			padding-top: 20px!important;
 		}
-	}	
+	}
 
 	#btn-callback{
 		cursor: pointer;
@@ -6548,16 +6551,16 @@ main {
 			border-radius: 36px;
 		}
 	}
-	
+
 	@media screen and (max-width: 1440px){
 		right: 15px;
 	}
 
-	
+
 	@include media("<widescreen") {
 		right: 10px;
 	}
-	
+
 	@include media("<desktop") {
 		//width: 222px;
 	}
@@ -6565,12 +6568,12 @@ main {
 	@include media("<tablet") {
 		bottom: 10px;
 		width: 50px!important;
-		
+
 		.callback-block {
 			border-top: none!important;
 		}
 	}
-	
+
 	.chat-opener {
 		margin: 0;
 	}
@@ -6594,64 +6597,64 @@ main {
 	background: #eee;
 	margin: 0 -9999px;
 	padding: 0 9999px;
-	
+
 	@include media("<tablet") {
 		margin: 0 -20px;
 		padding: 0 20px;
 	}
-	
+
 	.container {
 		display: block;
 	}
-	
+
 	.frame {
 		position: relative;
 		text-align: center;
 		padding: 30px 200px;
 		width: 82.9%;
 		margin: 0 0 0 auto;
-		
+
 		@include media("<desktop") {
 			width: 65%;
 			padding: 30px 230px 30px 0;
 			text-align: left;
 		}
-		
+
 		@include media("<tablet") {
 			padding: 20px 0;
 			width: 100%;
 			margin: 0;
 		}
 	}
-	
+
 	.chat-holder {
 		position: absolute;
 		right: -15px;
 		bottom: 0;
 		width: 194px;
-		
+
 		@include media("<widescreen") {
 			right: 0;
 		}
-		
+
 		@include media("<desktop") {
 			width: 222px;
 		}
-		
+
 		@include media("<tablet") {
 			display: none;
 		}
-		
+
 		.chat-opener {
 			margin: 0;
 		}
 	}
-	
+
 	.btn-gift {
 		text-transform: none;
 		font-weight: 400;
 		padding: 13px 39px 11px;
-		
+
 		@include media("<desktop") {
 			padding: 10px 25px 9px 36px;
 			font-size: 14px;
@@ -6659,46 +6662,46 @@ main {
 			max-width: 220px;
 			line-height: 17px;
 		}
-		
+
 		@include media("<tablet") {
 			max-width: 290px;
 			margin: 0 auto;
 			padding: 20px 25px 9px 14px;
 			display: block;
 		}
-		
+
 		i {
 			font-size: 40px;
 			display: inline-block;
 			vertical-align: top;
 			margin: -6px 21px -2px 0;
-			
+
 			@include media("<desktop") {
 				float: left;
 				margin: -2px 9px -1px 0;
 			}
-			
+
 			@include media("<tablet") {
 				float: none;
 				margin: -11px 21px -2px 0;
 			}
 		}
-		
+
 		span {
 			@include media("<desktop") {
 				text-align: left;
 				display: block;
 			}
-			
+
 			@include media("<tablet") {
 				display: inline;
 			}
 		}
-		
+
 		b {
 			font-size: 24px;
 			font-weight: 900;
-			
+
 			@include media("<desktop") {
 				font-size: 18px;
 			}
@@ -6711,23 +6714,23 @@ main {
 	font-weight: 900;
 	font-size: 24px;
 	line-height: 1.21;
-	
+
 	@include media("<desktop") {
 		font-size: 26px;
 		line-height: 1.15;
 		margin: -2px 0 0;
 	}
-	
+
 	@include media("<tablet") {
 		font-size: 14px;
 		line-height: 17px;
 		margin-top: -13px;
 	}
-	
+
 	p {
 		mark {
 			display: block;
-			
+
 			@include media("<tablet") {
 				font-size: 18px;
 				line-height: 21px;
@@ -6738,24 +6741,24 @@ main {
 
 .trade-holder {
 	margin: -10px 0 0;
-	
+
 	@include media("<desktop") {
 		margin-top: -2px;
 	}
-	
+
 	@include media("<tablet") {
 		max-width: 300px;
 		margin: -2px auto 0;
 	}
-	
+
 	.services-list {
 		width: auto;
 		float: none;
-		
+
 		@include media("<widescreen") {
 			margin: 0 -15px;
 		}
-		
+
 		@include media("<desktop") {
 			margin: 0 -15px 4px;
 			max-width: none;
@@ -6764,60 +6767,60 @@ main {
 		@include media("<tablet") {
 			margin: 0 -5px 3px;
 		}
-		
+
 		li {
 			width: 50%;
 			padding-bottom: 31px;
-			
+
 			@include media("<widescreen") {
 				padding: 0 15px 30px;
 			}
-			
+
 			@include media("<desktop") {
 				padding: 0 15px 21px;
 			}
-			
+
 			@include media("<tablet") {
 				padding: 0 5px 17px;
 			}
 		}
-		
+
 		.block {
 			font-size: 15px;
 			line-height: 19px;
 			padding: 26px 5px 21px;
 			box-shadow: 0 4px 10px rgba($black, 0.25);
-			
+
 			@include media("<desktop") {
 				font-size: 11px;
 				line-height: 13px;
 				padding: 3px 5px 14px;
 			}
-			
+
 			@include media("<tablet") {
 				box-shadow: 0 5px 5px rgba($black, 0.25);
 				padding: 3px 3px 14px;
 			}
 		}
-		
+
 		.icon-block {
 			margin-bottom: 24px;
-			
+
 			@include media("<desktop") {
 				margin-bottom: 1px;
 			}
-			
+
 			@include media("<tablet") {
 				margin-bottom: 9px;
 			}
-			
+
 			img {
 				transform: scale(1);
-				
+
 				@include media("<desktop") {
 					transform: scale(0.7);
 				}
-				
+
 				@include media("<tablet") {
 					transform: scale(0.667);
 				}
@@ -6828,7 +6831,7 @@ main {
 
 .current-bonus {
 	display: none;
-	
+
 	@include media("<desktop") {
 		display: flex;
 		align-items: center;
@@ -6836,61 +6839,61 @@ main {
 		max-width: 268px;
 		margin: -10px auto 20px;
 	}
-	
+
 	@include media("<tablet") {
 		padding-right: 21px;
 	}
-	
+
 	.block {
 		font-size: 14px;
 		font-weight: 900;
 		color: $orange;
 		padding: 12px 0 0;
 		text-align: left;
-		
+
 		@include media("<tablet") {
 			font-size: 18px;
 			line-height: 1.22;
 			width: 57%;
 		}
-		
+
 		.title {
 			display: block;
 			padding: 0 0 2px;
 			margin: 0 0 -3px;
 			border-bottom: 2px solid $orange;
-			
+
 			@include media("<tablet") {
 				margin: 0;
 				display: inline-block;
 				vertical-align: top;
 			}
 		}
-		
+
 		.amount {
 			display: block;
 			text-align: left;
 			font-size: 18px;
 			text-transform: uppercase;
-			
+
 			@include media("<tablet") {
 				font-size: 24px;
 				line-height: 1.2;
 			}
-			
+
 			mark {
 				font-size: 30px;
-				
+
 				@include media("<tablet") {
 					font-size: 36px;
 				}
 			}
 		}
 	}
-	
+
 	.icon-block {
 		width: 61px;
-		
+
 		@include media("<tablet") {
 			width: 90px;
 		}
@@ -6900,12 +6903,12 @@ main {
 .ruler-block {
 	@include media("<tablet") {
 		padding-bottom: 50px;
-		
+
 		&:last-child {
 			padding-bottom: 0;
 		}
 	}
-	
+
 	.hover-block {
 		opacity: 0;
 		visibility: hidden;
@@ -6926,7 +6929,7 @@ main {
 		justify-content: center;
 		flex-direction: row;
 		transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
-		
+
 		.text {
 			font-size: 14px;
 			// line-height: 1.2;
@@ -6934,29 +6937,29 @@ main {
 			text-transform: none;
 			width: 100%;
 			display: block;
-			
+
 			b {
 				font-size: 18px;
 				font-weight: 900;
 				text-transform: uppercase;
 			}
 		}
-		
+
 		.icon-block {
 			height: 56px;
 			width: 100%;
 			margin-bottom: 10px;
-			
+
 			img {
 				transform: scale(0.33);
 			}
 		}
-		
+
 		.button-block {
 			padding-top: 10px;
 			width: 100%;
 		}
-		
+
 		.button {
 			font-size: 14px;
 			padding: 7px 10px;
@@ -6970,38 +6973,38 @@ main {
 	@extend %listreset;
 	display: flex;
 	margin: 0 -15px 24px;
-	
+
 	&:last-child {
 		margin-bottom: 0;
 	}
-	
+
 	@include media("<desktop") {
 		display: none;
 		margin: 0 auto 20px;
 		max-width: 316px;
 		justify-content: center;
-		
+
 		&:last-child {
 			margin-bottom: inherit;
 		}
 	}
-	
+
 	@include media("<tablet") {
 		overflow: hidden;
 		text-align: center;
 		max-width: 290px;
 		margin: 0 auto 50px;
 	}
-	
+
 	li {
 		width: 20%;
 		padding: 0 15px;
 		position: relative;
-		
+
 		@include media("<desktop") {
 			padding: 0 10px;
 		}
-		
+
 		@include media("<tablet") {
 			max-width: 58px;
 			width: auto;
@@ -7010,13 +7013,13 @@ main {
 			float: left;
 			padding: 0 11px;
 		}
-		
+
 		&.active {
 			border: solid #aeaeae;
 			border-width: 2px 2px 0;
 			background: $white;
 		}
-		
+
 		&.current {
 			color: $orange;
 
@@ -7027,7 +7030,7 @@ main {
 				font-weight: 900;
 			}
 		}
-		
+
 		&.available,
 		&.unavailable {
 			.icon-block {
@@ -7039,7 +7042,7 @@ main {
 				}
 			}
 		}
-		
+
 		&.unavailable {
 			&:before {
 				content: '';
@@ -7062,7 +7065,7 @@ main {
 			}
 		}
 	}
-	
+
 	span {
 		display: block;
 		font-size: 20px;
@@ -7071,30 +7074,30 @@ main {
 		display: block;
 		margin: 0 0 -1px;
 		text-transform: uppercase;
-		
+
 		@include media("<desktop") {
 			display: none;
 		}
 	}
-	
+
 	.icon-block {
 		height: 100px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		
+
 		@include media("<desktop") {
 			height: 60px;
 		}
-		
+
 		img {
 			transform: scale(0.4);
 			width: 100%;
-			
+
 			@include media("<desktop") {
 				transform: scale(0.825);
 			}
-			
+
 			@include media("<tablet") {
 				transform: scale(1.05);
 			}
@@ -7104,26 +7107,26 @@ main {
 
 .bonuses-range-tabs {
 	display: none;
-	
+
 	@include media("<desktop") {
 		display: block;
 	}
-	
+
 	.bonuses-range {
 		@include media("<desktop") {
 			display: flex;
 		}
-		
+
 		@include media("<tablet") {
 			display: block;
 		}
-		
+
 		li {
 			&.unavailable {
 				&:before {
 					display: none;
 				}
-				
+
 				a {
 					&:before {
 						content: '';
@@ -7139,30 +7142,30 @@ main {
 			}
 		}
 	}
-	
+
 	.tab-content {
 		margin: -22px 0 20px;
-		
+
 		@include media("<tablet") {
 			margin: -52px 1px 0;
 		}
-		
+
 		.icon-block {
 			width: 45px;
 			height: 60px;
 			display: flex;
 			align-items: center;
 			margin: 0 auto 10px;
-			
+
 			@include media("<tablet") {
 				height: 62px;
 			}
-			
+
 			img {
 				transform: none;
 			}
 		}
-		
+
 		.hover-block {
 			opacity: 1;
 			visibility: visible;
@@ -7174,11 +7177,11 @@ main {
 			box-shadow: none;
 			max-width: 316px;
 			padding: 10px 13px 20px;
-			
+
 			@include media("<tablet") {
 				max-width: 290px;
 			}
-			
+
 			> span {
 				display: none;
 			}
@@ -7190,54 +7193,54 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	margin: -4px -2px 18px;
-	
+
 	@include media("<desktop") {
 		margin: -5px -30px 0;
 	}
-	
+
 	@include media("<tablet") {
 		font-size: 18px;
 		margin: -5px auto 33px;
 		display: block;
 		max-width: 400px;
 	}
-	
+
 	&:last-child {
 		margin-bottom: 0;
 	}
-	
+
 	li {
 		padding: 0 8px;
 		width: 25%;
-		
+
 		@include media("<desktop") {
 			width: 50%;
 			padding-bottom: 20px;
 		}
-		
+
 		@include media("<tablet") {
 			padding: 19px 0 0;
 			width: 100%;
 			display: flex;
 			justify-content: space-between;
-			
+
 			&:first-child {
 				padding-top: 0;
 			}
 		}
 	}
-	
+
 	span {
 		padding: 8px 0 0;
 		display: block;
 		font-size: 20px;
 		font-weight: 900;
 		color: $orange;
-		
+
 		@include media("<desktop") {
 			padding-top: 6px;
 		}
-		
+
 		@include media("<tablet") {
 			padding: 0;
 		}
@@ -7255,54 +7258,54 @@ main {
 		.row {
 			border-color: $orange;
 		}
-		
+
 		.jcf-select {
 			.jcf-select-opener {
 				display: block;
 			}
 		}
-		
+
 		.button {
 			display: inline-block;
 			margin: 0 12px;
-			
+
 			@include media("<tablet") {
 				margin: 0 5px;
 				max-width: 140px;
 				display: inline-block;
 			}
-			
+
 			&.btn-edit {
 				display: none;
-				
+
 				@include media("<tablet") {
 					display: none;
 				}
 			}
 		}
 	}
-	
+
 	.columns {
 		display: flex;
 		justify-content: space-between;
 		margin: 0 -10px;
-		
+
 		@include media("<phone") {
 			display: block;
 			margin: 0;
 		}
 	}
-	
+
 	.col {
 		width: 50%;
 		padding: 0 10px;
-		
+
 		@include media("<phone") {
 			width: auto;
 			padding: 0;
 		}
 	}
-	
+
 	.column-hidden{
 		visibility: hidden;
 		height: 0;
@@ -7311,14 +7314,14 @@ main {
 		border: 0;
 		outline: 0;
 	}
-	
+
 	.row {
 		border-bottom: 1px solid $light-gray;
 		margin: 0 0 20px;
 		padding: 0 0 4px;
 		transition: border 0.3s;
 	}
-	
+
 	.title {
 		display: block;
 		font-size: 14px;
@@ -7327,7 +7330,7 @@ main {
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
-	
+
 	input[type='text'],
 	input[type='tel'],
 	input[type='email'],
@@ -7344,27 +7347,27 @@ main {
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
-	
+
 	.jcf-select {
 		height: 25px;
 		border: none;
 		margin: 0;
-		
+
 		&.jcf-disabled {
 			background: $form-element-background;
 		}
-		
+
 		.jcf-select-text {
 			line-height: 25px;
 			font-weight: 900;
 			margin: 0;
 		}
-		
+
 		.jcf-select-opener {
 			border: none;
 			width: 22px;
 			display: none;
-			
+
 			&:before {
 				transform: translate(0, -50%);
 				left: auto;
@@ -7372,15 +7375,15 @@ main {
 			}
 		}
 	}
-	
+
 	.jcf-list {
 		font-size: 16px;
-		
+
 		.jcf-option {
 			padding: 5px 9px;
 		}
 	}
-	
+
 	.button-block {
 		@include media("<tablet") {
 			margin: 0 -5px;
@@ -7388,21 +7391,21 @@ main {
 			justify-content: center;
 		}
 	}
-	
+
 	.button {
 		display: none;
 		padding: 18px 8px 16px;
-		
+
 		@include media("<tablet") {
 			display: none;
 		}
-		
+
 		&.btn-edit {
 			@extend .btn-light;
 			display: inline-block;
 			vertical-align: top;
 			min-width: 262px;
-			
+
 			@include media("<tablet") {
 				display: inline-block;
 				margin: 0;
@@ -7413,15 +7416,15 @@ main {
 
 .settings-form {
 	padding: 8px 30px 0;
-	
+
 	@include media("<desktop") {
 		padding: 8px 24px 0;
 	}
-	
+
 	@include media("<tablet") {
 		padding: 0;
 	}
-	
+
 	.text-holder {
 		text-align: left;
 		font-size: 14px;
@@ -7429,31 +7432,31 @@ main {
 		margin-top: -10px;
 		padding: 0 10% 23px 0;
 		letter-spacing: 0.06em;
-		
+
 		@include media("<desktop") {
 			padding: 0 8% 27px 0;
 		}
-		
+
 		@include media("<tablet") {
 			font-size: 12px;
 			line-height: 14px;
 			margin-top: -8px;
 			padding: 0 7px 24px 0;
 		}
-		
+
 		p {
 			margin: 0;
-			
+
 			@include media("<tablet") {
 				margin-bottom: 1px;
 			}
 		}
 	}
-	
+
 	.button-block {
 		margin: -8px 0 0;
 	}
-	
+
 	.button {
 		min-width: 262px;
 		padding: 19px 12px 16px;
@@ -7468,11 +7471,11 @@ main {
 			}
 		}
 	}
-	
+
 	table {
 		tr {
 			display: none;
-			
+
 			&:nth-child(-n+3) {
 				display: table-row;
 			}

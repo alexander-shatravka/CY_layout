@@ -3,9 +3,9 @@ $(document).ready(function() {
 	initMobileNav();
 	initAnchors();
 	initFancybox();
-	initRolloverInstructionPopup();
-    initSubmitRolloverButton();
-    initSubmitRolloverButtonDashboard();
+	// initRolloverInstructionPopup();
+    // initSubmitRolloverButton();
+    // initSubmitRolloverButtonDashboard();
 	initCustomHover();
 	initCustomForms();
 	initAddClasses();
@@ -17,41 +17,50 @@ $(document).ready(function() {
 	initSlider();
 	updateSliderValues();
 	// initFixedHeader();
-	initpasswordShow();
+	// initpasswordShow();
 	// registerValidationRules();
 	//validationSteps();
 	// validationStepsNew();
-	initAutocomplete();
-	initCreditCardField();
-	initAjaxUploader();
-	initLinkBankCard();
-	initClickSync();
-	recalculateBonusesBar();
-	initSubmitLink();
-	initAccordion();
-	initAjaxForm();
-	initInlineFormEditing();
-	initShowIfValue();
-	changeCursorPosition();
-	// initFormsValidation();	
-	checkPhone();
-	initBanksTabs();
-	initClickOnDomReady();
-	initDoubleSubmitProtect();
-	initDropdown();
-    initToolTipForSelfie();
-    initRegistrationHeaderOpener();
-	initRegistrationHeaderTwitch();
-	initRolloverOfferWindow();
-	initRepayFormValues();
-	initAjaxRepayOffer();
-	initTelegramActivity();
+	// initAutocomplete();
+	// initCreditCardField();
+	// initAjaxUploader();
+	// initLinkBankCard();
+	// initClickSync();
+	// recalculateBonusesBar();
+	// initSubmitLink();
+	// initAccordion();
+	// initAjaxForm();
+	// initInlineFormEditing();
+	// initShowIfValue();
+	// changeCursorPosition();
+	// initFormsValidation();
+	// checkPhone();
+	// initBanksTabs();
+	// initClickOnDomReady();
+	// initDoubleSubmitProtect();
+	// initDropdown();
+    // initToolTipForSelfie();
+    // initRegistrationHeaderOpener();
+	// initRegistrationHeaderTwitch();
+	// initRolloverOfferWindow();
+	// initRepayFormValues();
+	// initAjaxRepayOffer();
+	// initTelegramActivity();
 	initAjaxCallback();
-	initBanForRepay();
-	initFixDoubleClick();
+	// initBanForRepay();
+	// initFixDoubleClick();
 	//initSkipButton();
-	initEnableEditing();
+	// initEnableEditing();
+	initSubmitLoan();
 });
+
+function initSubmitLoan(){
+	document.getElementById("loan-submit").addEventListener("click", function(event){
+		event.preventDefault();
+		var locationWithParametres = 'https://test.cashyou.ua/?amount=1000&term=10&promocode=someValue';
+		location = locationWithParametres;
+	});
+}
 
 function initBtnGetDisplay(){
 	var arrCurrentRoute = location.href.split('/');
@@ -116,7 +125,7 @@ function initDoubleSubmitProtect() {
 				e.preventDefault();
 				return;
 			}
-			
+
 			self.addClass('js-clicked');
 		});
 	});
@@ -142,50 +151,50 @@ function checkPhone(context) {
 			textDefault = button.text(),
 			sendUrl = button.attr('data-send-url'),
 			verifiedPhones = JSON.parse(button.attr('data-verified')),
-			
+
 			isPhoneVerified = function(phone){
 				var clearPhone = String(phone).replace(/[^0-9]/g, '');
-				
+
 				return $.inArray(clearPhone, verifiedPhones) !== -1;
 			};
-		
-		
+
+
 
 
 		input.on('keyup change', function(){
 			var phone = input.val();
-			
+
 			if (phone.length == 19 && !isPhoneVerified(phone)) {
 				//button.removeClass('hidden');
 				button.removeClass('disabled');
-				button.removeClass('phone-verified');				
+				button.removeClass('phone-verified');
 				button.text(textDefault);
 			} else if (phone.length == 19) {
 				//button.addClass('disabled');
-				button.addClass('phone-verified');										
+				button.addClass('phone-verified');
 
 				button.text(textVerified);
 				button.removeClass('disabled');
 				//button.removeClass('hidden');
 				button.removeClass('phone-not-verified');
-			} else {				
+			} else {
 				//button.addClass('hidden');
 				button.addClass('disabled');
 				button.removeClass('phone-not-verified');
 			}
 		}).trigger('keyup');
-		
+
 		button.on('click', function(e){
 			e.preventDefault();
-			
+
 			var phone = input.val();
 
 			if (isPhoneVerified(phone)) {
 				return false;
 			}
-			
+
 			button.text(textSending);
-			
+
 			jQuery.ajax({
 				type: 'POST',
 				url: sendUrl,
@@ -203,7 +212,7 @@ function checkPhone(context) {
 
 
 							e.preventDefault();
-							
+
 							if (form.valid() === true) {
 								checkButton.text(textSending);
 
@@ -217,7 +226,7 @@ function checkPhone(context) {
 										if (response.success) {
 											verifiedPhones.push(phone.replace(/[^\+0-9]/, ''));
 											//button.addClass('disabled');
-											button.addClass('phone-verified');											
+											button.addClass('phone-verified');
 											button.text(textVerified);
 											button.removeClass('hidden');
 											button.removeClass('phone-not-verified');
@@ -266,7 +275,7 @@ function checkPhone(context) {
 							});
 						})
 					;
-					
+
 					jQuery.fancybox.open(button, {
 						parentEl: 'body',
 						margin: [50, 0],
@@ -284,7 +293,7 @@ function checkPhone(context) {
 			});
 		});
 	});
-	
+
 }
 
 function  initToolTipForSelfie() {
@@ -324,7 +333,7 @@ function initFormsValidation(context) {
 				jQuery(element).next("span.jcf-select").removeClass("select-has-error");
 			}
 		});
-		
+
 		form.on('submit', function(e){
 			if (form.valid() !== true) {
 				e.preventDefault();
@@ -338,13 +347,13 @@ function initFormsValidation(context) {
     // Behind the scenes method deals with browser
     // idiosyncrasies and such
     $.caretTo = function (el, index) {
-        if (el.createTextRange) { 
-            var range = el.createTextRange(); 
-            range.move("character", index); 
-            range.select(); 
-        } else if (el.selectionStart != null) { 
-            el.focus(); 
-            el.setSelectionRange(index, index); 
+        if (el.createTextRange) {
+            var range = el.createTextRange();
+            range.move("character", index);
+            range.select();
+        } else if (el.selectionStart != null) {
+            el.focus();
+            el.setSelectionRange(index, index);
         }
     };
 
@@ -357,18 +366,18 @@ function initFormsValidation(context) {
         return this.queue(function (next) {
             if (isNaN(index)) {
                 var i = $(this).val().indexOf(index);
-                
+
                 if (offset === true) {
                     i += index.length;
                 } else if (offset) {
                     i += offset;
                 }
-                
+
                 $.caretTo(this, i);
             } else {
                 $.caretTo(this, index);
             }
-            
+
             next();
         });
     };
@@ -378,7 +387,7 @@ function initFormsValidation(context) {
 function changeCursorPosition() {
 	jQuery('#registration_form_phone, #registration_form_workPhone').click(function(){
 		if (!jQuery(this).val()) {
-			jQuery(this).val('+38').caretTo('+38');	
+			jQuery(this).val('+38').caretTo('+38');
 		}
 	});
 }
@@ -388,13 +397,13 @@ function initShowIfValue(context) {
 		var self = jQuery(this),
 			field = jQuery(self.attr('data-show-if-field'), context),
 			showIfValue = String(self.attr('data-show-if-value')).split('|');
-		
+
 		if (showIfValue.indexOf(field.val()) !== -1) {
 			self.removeClass('hidden');
 		} else {
 			self.addClass('hidden');
 		}
-		
+
 		field.on('change', function(){
 			if (showIfValue.indexOf(field.val()) !== -1) {
                 self.removeClass('hidden');
@@ -613,13 +622,13 @@ function initAjaxForm(context) {
 		});
 	});
 
-	
+
 }
 
 function initSubmitLink() {
 	jQuery('.js-submit-link').on('click', function(e){
 		e.preventDefault();
-		
+
 		jQuery(this).closest('form').submit();
 	});
 }
@@ -642,14 +651,14 @@ function recalculateBonusesBar()
 		percentCompleteBars = Math.ceil(percentComplete / 10),
 		percentCompleteBarsList = jQuery('.js-indicator-list')
 	;
-	
+
 	jQuery('.document-uploader-input').each(function(){
 		var value = jQuery(this).val();
 		if (value && value !== 'null') {
 			docUploaded++;
 		}
 	});
-	
+
 	jQuery('.js-bonus-steps li').each(function(i){
 		var self = jQuery(this);
 
@@ -661,7 +670,7 @@ function recalculateBonusesBar()
 		if (i == activeStepNumber) {
 			self.addClass('active');
 		}
-		
+
 		if (i < activeStepNumber) {
 			if (i < 4 || ((i == 4) && docUploaded)) {
 				self.addClass('passed');
@@ -670,7 +679,7 @@ function recalculateBonusesBar()
 			}
 		}
 	});
-	
+
 	jQuery('.js-indicator-percent').text(percentComplete + '%');
 
 	percentCompleteBarsList.html('');
@@ -688,7 +697,7 @@ function initClickSync() {
 	jQuery('[data-click]').each(function(){
 		var self = jQuery(this),
 			target = jQuery(self.attr('data-click'));
-		
+
 		self.on('click', function(e){
 			e.preventDefault();
 			target.trigger('click');
@@ -720,7 +729,7 @@ function initLinkBankCard(context) {
 				console.log(response);
 			}
 		);
-		
+
 		return false;
 	});
 }
@@ -828,9 +837,9 @@ if($('.rollover-offer-wrapper')){
 }
 
 
-function initAjaxUploader(context) {	
+function initAjaxUploader(context) {
 	jQuery('.document-uploader', context).each(function(){
-		
+
 		var fileInput = jQuery(this),
 			button = fileInput.closest('.jcf-file').find('.jcf-button-content'),
 			buttonArea = fileInput.closest('.jcf-file').find('.jcf-upload-button'),
@@ -845,7 +854,7 @@ function initAjaxUploader(context) {
 
 			var arrId = idInput.split('_');
 			var fieldName = arrId[arrId.length - 1];
-			
+
 			idInput = jQuery(idInput);
 
 			if (idInput.length) {
@@ -858,32 +867,32 @@ function initAjaxUploader(context) {
 						data.submit();
 						buttonArea.removeClass('upload-success-button');
 						buttonArea.removeClass('upload-error-button');
-						downloadRow.find('.req-descr').removeClass('show');											
+						downloadRow.find('.req-descr').removeClass('show');
 					},
-					'done': function (e, data) {						
+					'done': function (e, data) {
 						if (data.result) {
 							if(data.result.error){
-								if(data.result.error == 'fatal'){									
+								if(data.result.error == 'fatal'){
 									idInput.val(JSON.stringify([data.result]));
 									button.text(textLoaded);
 									if(downloadRow.hasClass('selfie-download-row')){
 										$('.tool-tip').remove();
-									}							
+									}
 									buttonArea.addClass('upload-success-button');
 								} else {
-									button.text(textError);	
-									buttonArea.addClass('upload-error-button');								
+									button.text(textError);
+									buttonArea.addClass('upload-error-button');
 									var errorEl = downloadRow.find('.download-error-'+data.result.error);
 									errorEl.addClass('show');
-								}																						
+								}
 							} else {
 								idInput.val(JSON.stringify([data.result]));
 								button.text(textLoaded);
 								if(downloadRow.hasClass('selfie-download-row')){
 									$('.tool-tip').remove();
-								}							
-								buttonArea.addClass('upload-success-button');																
-							}							
+								}
+								buttonArea.addClass('upload-success-button');
+							}
 						}
 					}
 				});
@@ -892,10 +901,10 @@ function initAjaxUploader(context) {
 				if(downloadRow.hasClass('selfie-download-row')){
 					$('.tool-tip').remove();
 				}
-				fakeInput.hide();			
+				fakeInput.hide();
 				buttonArea.css('display', 'block');
-				buttonArea.addClass('upload-success-button');				
-			}			
+				buttonArea.addClass('upload-success-button');
+			}
 		}
 
 	});
@@ -1195,7 +1204,7 @@ function validationSteps(context) {
 
 		current.removeClass("active");
 		prev.addClass("active");
-		
+
 		setTimeout(recalculateBonusesBar, 100);
 	});
 	jQuery('.button-submit', context).click(function(e){
@@ -1261,21 +1270,21 @@ function validationStepsNew() {
 			form = button.closest('.js-step-form'),
 			buttonTextSending = button.attr('data-text-sending'),
 			buttonTextError = button.attr('data-text-error'),
-			buttonTextDefault = button.text();			
+			buttonTextDefault = button.text();
 
 		var hasUploadErrors = false;
 
 		var passportElem1 = $('.step-block.active #registration_photo_of_documents_form_docPassport1Json');
 		var elem1Container = passportElem1.closest('.download-row');
-		if(passportElem1.val() == "null" || passportElem1.val() == "[]"){			
+		if(passportElem1.val() == "null" || passportElem1.val() == "[]"){
 			elem1Container.find('.download-error-required').addClass('show');
 			buttonArea = elem1Container.find('.jcf-upload-button');
 			buttonArea.addClass('upload-error-button');
 			buttonArea.css('display', 'block');
 			var text = elem1Container.find('.jcf-real-element').attr('data-text-error');
-			buttonArea.find('.jcf-button-content').text(text);			
+			buttonArea.find('.jcf-button-content').text(text);
 			elem1Container.find('.jcf-fake-input').hide();
-			hasUploadErrors = true;			
+			hasUploadErrors = true;
 		}
 
 		var passportElem2 = $('.step-block.active #registration_photo_of_documents_form_docPassport2Json');
@@ -1286,9 +1295,9 @@ function validationStepsNew() {
 			buttonArea.addClass('upload-error-button');
 			buttonArea.css('display', 'block');
 			var text = elem2Container.find('.jcf-real-element').attr('data-text-error');
-			buttonArea.find('.jcf-button-content').text(text);			
+			buttonArea.find('.jcf-button-content').text(text);
 			elem2Container.find('.jcf-fake-input').hide();
-			hasUploadErrors = true;	
+			hasUploadErrors = true;
 		}
 
 		var passportElem3 = $('.step-block.active #registration_photo_of_documents_form_docPassport3Json');
@@ -1299,7 +1308,7 @@ function validationStepsNew() {
 			buttonArea.addClass('upload-error-button');
 			buttonArea.css('display', 'block');
 			var text = elem3Container.find('.jcf-real-element').attr('data-text-error');
-			buttonArea.find('.jcf-button-content').text(text);			
+			buttonArea.find('.jcf-button-content').text(text);
 			elem3Container.find('.jcf-fake-input').hide();
 			hasUploadErrors = true;
 		}
@@ -1330,7 +1339,7 @@ function validationStepsNew() {
                 jQuery(element).filter('input[type=checkbox]').closest("label").removeClass("checkbox-has-error");
 			}
 		});
-		if (form.valid() === true){		
+		if (form.valid() === true){
 			if (button.text() == buttonTextSending) {
 				return;
 			}
@@ -1339,14 +1348,14 @@ function validationStepsNew() {
 		} else {
 			var validator = form.validate();
 	        var phoneError = validator.errorMap['registration_create_an_account_form[phone]'];
-	        if(phoneError == "Phone not verified"){	        	
+	        if(phoneError == "Phone not verified"){
 	        	$('.check-button').addClass('phone-not-verified');
 	        }
 
 			var targetTop = $('.has-error').closest('.form-row').offset().top;
 			var headerHeight = $('#header').outerHeight();
 			var infoHeaderHeight = $('.registration-info-header').outerHeight();
-			var res = targetTop - headerHeight - infoHeaderHeight;			
+			var res = targetTop - headerHeight - infoHeaderHeight;
 			window.scrollTo(0, res);
 
 	        return false;
@@ -1390,10 +1399,10 @@ function validationStepsNew() {
 			//$('#registration_finance_state_form_workPhone').val('');
 		} else {
 			$('#registration_finance_state_form_businessType').val("31").change();
-		    $('#registration_finance_state_form_position').val("5").change();     					
+		    $('#registration_finance_state_form_position').val("5").change();
 			$('#registration_finance_state_form_companyName').val('Інше');
 			//$('#registration_finance_state_form_workPhone').val('+38 (099) 999-99-99');
-		}		
+		}
 	});
 
 	jQuery("#check-agree").click(function() {
@@ -1409,9 +1418,9 @@ function validationStepsNew() {
 		jQuery(".address-holder").addClass("selected");
 	}else{
 		jQuery(".address-holder").removeClass("selected");
-	}	
+	}
 
-	$('#registration_create_an_account_form_phone').focus(function() {	  
+	$('#registration_create_an_account_form_phone').focus(function() {
 	  	var elem = $(this).closest('.form-row')
 		.find('.popup');
 		elem.css('visibility', '');
@@ -1421,7 +1430,7 @@ function validationStepsNew() {
 		elem.css('z-index', '');
 		elem.css('color', '');
 		elem.css('position', '');
-	});     		     	
+	});
 }
 
 function initFixedHeader() {
@@ -1624,7 +1633,7 @@ function initSlider() {
 				newValue = Math.round(sliderCurrentValue) + step;
 			thisSlider.slider({value: newValue});
 			calculatedValue = sliderValues ? sliderValues[newValue-1] : newValue;
-				
+
 			count.html(formatMoney(calculatedValue));
 			if(thisSlider.hasClass("amount")) {
 				$count1 = count.html();
@@ -1719,15 +1728,17 @@ function updateSliderValues() {
 		if (values) {
 			values = JSON.parse(values);
 		}
-		
+
         input.val(values ? values[slider.slider('value')-1] : slider.slider('value'));
 
 		slider.on('slidechange', function(event, ui){
 			input.val(values ? values[ui.value-1] : ui.value);
+			console.log(values);
 		});
-		
+
 		slider.on('slidecreate', function(event, ui){
 			input.val(values ? values[ui.value-1] : ui.value);
+			console.log(values);
 		});
 	});
 }
@@ -1750,7 +1761,7 @@ function initMobileNav() {
 		hideOnClickOutside: true,
 		menuDrop: 'div.header-slide'
 	});
-	
+
 	jQuery('body').mobileNav({
 		menuActiveClass: 'profile-active',
 		menuOpener: '.profile-opener',
@@ -1919,7 +1930,7 @@ function initDatepicker() {
 			}
 
 		});
-	});	
+	});
 
 	if(jQuery('.salary-datepicker').length){
 		jQuery('.salary-datepicker .datepicker').datepicker('destroy');
@@ -1927,7 +1938,7 @@ function initDatepicker() {
 			var self = jQuery(this),
 				minDays = self.data('mindays'),
 				maxDays = self.data('maxdays');
-	
+
 			self.datepicker({
 				dateFormat: 'dd.mm.yy',
 				dayNamesMin: [ "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб" ],
@@ -1939,9 +1950,9 @@ function initDatepicker() {
 				showOn: "both",
 				minDate: minDays ? minDays : '1',
 			});
-		});	
+		});
 	}
-	
+
 }
 
 
@@ -2510,7 +2521,7 @@ function initDropdown() {
 
 		getTab: function($link) {
 			var tabId = $link.attr(this.options.attrib).replace('#', '');
-			
+
 			return $('['+this.options.idattrib+'="' + tabId + '"]');
 		},
 
@@ -2868,7 +2879,7 @@ jQuery.fn.clickClass = function(opt) {
 	var isTouchDevice = ('ontouchstart' in window) || window.DocumentTouch && document instanceof window.DocumentTouch,
 		isWinPhoneDevice = /Windows Phone/.test(navigator.userAgent);
 	commonOptions.isMobileDevice = !!(isTouchDevice || isWinPhoneDevice);
-	
+
 	var isIOS = /(iPad|iPhone).*OS ([0-9_]*) .*/.exec(navigator.userAgent);
 	if(isIOS) isIOS = parseFloat(isIOS[2].replace(/_/g, '.'));
 	commonOptions.ios = isIOS;
@@ -3278,7 +3289,7 @@ jQuery.fn.clickClass = function(opt) {
 	window.jcf = api;
 
 	return api;
-})); 
+}));
 
  /*!
  * Select Module
@@ -4216,7 +4227,7 @@ jQuery.fn.clickClass = function(opt) {
 	}());
 
 }(jQuery, this));
- 
+
 
  /*!
  * Radio Module
@@ -4405,7 +4416,7 @@ jQuery.fn.clickClass = function(opt) {
 	});
 
 }(jQuery));
- 
+
 
  /*!
  * Checkbox Module
@@ -4570,7 +4581,7 @@ jQuery.fn.clickClass = function(opt) {
 	});
 
 }(jQuery));
- 
+
 
  /*!
  * Scrollbar Module
@@ -5230,7 +5241,7 @@ jQuery.fn.clickClass = function(opt) {
 	});
 
 }(jQuery, this));
- 
+
 
  /*!
  * File Module
