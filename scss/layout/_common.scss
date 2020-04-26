@@ -965,6 +965,10 @@ main {
 		align-items: center;
 		justify-content: center;
 
+		@include media('<tablet') {
+			display: flex;
+		}
+
 		&.show-in-main {
 			display: flex;
 			align-items: center;
