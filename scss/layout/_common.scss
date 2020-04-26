@@ -966,7 +966,7 @@ main {
 		justify-content: center;
 
 		@include media('<tablet') {
-			display: flex;
+			display: flex!important;
 		}
 
 		&.show-in-main {
