@@ -55,9 +55,20 @@ $(document).ready(function() {
 });
 
 function initSubmitLoan(){
-	document.getElementById("loan-submit").addEventListener("click", function(event){
-		event.preventDefault();
-		var locationWithParametres = 'https://test.cashyou.ua/?amount=1000&term=10&promocode=someValue';
+	$('#has-promocode').change(function () {
+		console.log($(this).prop('checked'));
+		if($(this).prop('checked') === false){
+			$('.promocode-input').removeClass('enable');
+		}
+		else $('.promocode-input').addClass('enable');
+	});
+
+	$('#loan-submit').click(function(e){
+		e.preventDefault();
+		var amount = $('#loan_application_amount').val();
+		var term = $('#loan_application_term').val();
+		var promocode = $('#loan_application_promocode').val();
+		var locationWithParametres = 'https://test.cashyou.ua/?amount=' + amount + '&term=' + term + '&promocode=' + promocode;
 		location = locationWithParametres;
 	});
 }
@@ -1540,16 +1551,16 @@ function initSlider() {
 			}
 		});
 		if(sliderCurrent.hasClass("amount")) {
-			jQuery("<span class='clicable-area'></span><span class='count-wrap'><span class='count-frame'><b class='count'>0</b><span class='currency'> гривен</span></span></span>").appendTo(sliderCurrent.children("span.ui-slider-handle"));
+			jQuery("<span class='clicable-area'></span><span class='count-wrap'><span class='count-frame'><b class='count'>0</b><span class='currency'> гривен</span></span></span>").appendTo(sliderCurrent.children("a.ui-slider-handle"));
 		}
 		else if(sliderCurrent.hasClass("period") || sliderCurrent.hasClass("period2")) {
-			jQuery("<span class='clicable-area'></span><span class='count-wrap'><span class='count-frame'><b class='count'>0</b><span class='currency'> дней</span></span></span>").appendTo(sliderCurrent.children("span.ui-slider-handle"));
+			jQuery("<span class='clicable-area'></span><span class='count-wrap'><span class='count-frame'><b class='count'>0</b><span class='currency'> дней</span></span></span>").appendTo(sliderCurrent.children("a.ui-slider-handle"));
 		}
 		else if(sliderCurrent.hasClass("bonuses")) {
-			jQuery("<span class='clicable-area'></span><span class='count-wrap'><span class='count-frame'><b class='count'>0</b><span class='currency'> бонусов</span></span></span>").appendTo(sliderCurrent.children("span.ui-slider-handle"));
+			jQuery("<span class='clicable-area'></span><span class='count-wrap'><span class='count-frame'><b class='count'>0</b><span class='currency'> бонусов</span></span></span>").appendTo(sliderCurrent.children("a.ui-slider-handle"));
 		}
 		else{
-			jQuery("<span class='clicable-area'></span><span class='count-wrap'><span class='count-frame'><b class='count'>0</b><span class='currency'> гривен</span></span></span>").appendTo(sliderCurrent.children("span.ui-slider-handle"));
+			jQuery("<span class='clicable-area'></span><span class='count-wrap'><span class='count-frame'><b class='count'>0</b><span class='currency'> гривен</span></span></span>").appendTo(sliderCurrent.children("a.ui-slider-handle"));
 		}
 		var count = sliderCurrent.find(".count");
 		count.html(sliderCurrent.data("default"));
@@ -1733,12 +1744,10 @@ function updateSliderValues() {
 
 		slider.on('slidechange', function(event, ui){
 			input.val(values ? values[ui.value-1] : ui.value);
-			console.log(values);
 		});
 
 		slider.on('slidecreate', function(event, ui){
 			input.val(values ? values[ui.value-1] : ui.value);
-			console.log(values);
 		});
 	});
 }

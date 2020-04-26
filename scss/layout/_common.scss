@@ -363,8 +363,63 @@ main {
 		}
 
 		&.row-period {
+			margin-bottom: 50px;
+
 			.ui-slider-range {
 				background: #ff8200;
+			}
+		}
+
+		&.row-promocode {
+			justify-content: flex-start;
+			align-items: flex-end;
+			margin-bottom: 60px;
+
+			.promocode-check {
+				flex-basis: 33%;
+				display: flex;
+				align-items: flex-end;
+
+				@include media('<tablet') {
+
+				}
+			}
+
+			.custom-checkbox {
+				.jcf-checkbox {
+					height: 20px;
+					width: 20px;
+					margin-right: 20px;
+
+					&:before {
+						height: 8px;
+						top: 3px;
+						left: 2px;
+						width: 14px;
+						border-width: 2px;
+					}
+				}
+			}
+
+			.promocode-input {
+				transform: scaleX(0);
+				transition: transform 0.3s ease-in;
+				padding-left: 20px;
+				flex-basis: 60%;
+
+				@include media('<tablet') {
+					padding-left: 0;
+					margin-top: 20px;
+				}
+
+				input {
+					margin: 0;
+					height: 40px;
+				}
+
+				&.enable {
+					transform: scaleX(1);
+				}
 			}
 		}
 
