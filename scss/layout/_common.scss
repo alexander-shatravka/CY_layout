@@ -375,14 +375,14 @@ main {
 			align-items: flex-end;
 			margin-bottom: 60px;
 
+			@include media('<tablet') {
+				margin-bottom: 30px;
+			}
+
 			.promocode-check {
 				flex-basis: 33%;
 				display: flex;
 				align-items: flex-end;
-
-				@include media('<tablet') {
-
-				}
 			}
 
 			.custom-checkbox {
