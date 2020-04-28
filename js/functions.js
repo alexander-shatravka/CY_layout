@@ -73,39 +73,6 @@ function initSubmitLoan(){
 	});
 }
 
-function initBtnGetDisplay(){
-	var arrCurrentRoute = location.href.split('/');
-	var currentRoute = arrCurrentRoute[arrCurrentRoute.length-2];
-	if(currentRoute != "profile"){
-		$('.show-in-profile').remove();
-	}
-	else $('.show-in-main').remove();
-}
-
-function initEnableEditing(){
-	if($('#enable-edit-helper').length){
-		$('.btn-edit').addClass('enable-edit');
-	}
-}
-
-function initFixDoubleClick(){
-	function initDisableBtn(){
-		$('.btn-disable').click(function(){
-			return false;
-		})
-	}
-	$('.btn-fix-double-click').click(function(){
-		var btn = $(this);
-		setTimeout(function(){
-		   btn.addClass('btn-disable');
-		   initDisableBtn();
-		},10)
-		setTimeout(function(){
-			btn.removeClass('btn-disable');
-		},3000)
-	})
-}
-
 function initAjaxCallback() {
 	$('#btn-callback').on('click',(function(e){
 		e.preventDefault();
@@ -126,20 +93,6 @@ function initAjaxCallback() {
 function formatMoney(value) {
 	var parts = String(value).split('.');
 	return parts.length > 1 ? (parts[0] + ',<sub>' + parts[1] + '</sub>') : parts[0];
-}
-
-function initDoubleSubmitProtect() {
-	jQuery('.double-submit-protect').each(function(){
-		var self = jQuery(this);
-		self.on('click', function(e){
-			if (self.hasClass('js-clicked')) {
-				e.preventDefault();
-				return;
-			}
-
-			self.addClass('js-clicked');
-		});
-	});
 }
 
 function initClickOnDomReady() {
@@ -168,10 +121,6 @@ function checkPhone(context) {
 
 				return $.inArray(clearPhone, verifiedPhones) !== -1;
 			};
-
-
-
-
 		input.on('keyup change', function(){
 			var phone = input.val();
 
