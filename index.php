@@ -1,3 +1,5 @@
+<?php echo $_SERVER['REQUEST_URI']?>
+<?php include 'header.php'?>
 <main>
     <section class="intro-section">
         <div class="holder">
@@ -69,7 +71,7 @@
                            class="button btn-get">
                             Заповнити анкету
                         </a>
-                    </div>
+                        </div>
                     <input type="hidden" id="loan_application_amount" name="loan_application[amount]"/>
                     <input type="hidden" id="loan_application_term" name="loan_application[term]"/>
                     <input type="hidden" id="loan_application_product" name="loan_application[product]"
@@ -628,4 +630,6 @@
         </div>
     </div>
 </main>
+
+<?php include 'footer.php'?>
 
