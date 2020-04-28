@@ -26,8 +26,9 @@
 	<meta name="msapplication-square310x310logo" content="/images/mstile-310x310.png" />
 
 			<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-		<link href="/css/style.css" rel="stylesheet">
-	
+		<link href="assets/style.min.css" rel="stylesheet">
+		<link href="assets/style.min.css" rel="stylesheet">
+
 			<script type="text/javascript">
             var creditConfig = {
                                 percent: 0.018,
@@ -35,42 +36,8 @@
             }
 		</script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-		<script src="/js/all.js"></script>
-		<!-- Google Tag Manager -->
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-			})(window,document,'script','dataLayer','GTM-MVRBQ84');</script>
-		<!-- End Google Tag Manager -->
+		<script src="/assets/main.min.js"></script>
 
-		<!-- DMP Cloud -->
-		<script>
-            (function (js) {
-                var scr = document.createElement('script');
-                scr.setAttribute("src", js + "?ts=" + (new Date().getTime()));
-                scr.setAttribute("async", true);
-                document.getElementsByTagName("head")[0].appendChild(scr);
-            }("//www.dmpcloud.net/spx/cashyou.ua/spx.js"));
-		</script>
-		<!-- DMP Cloud -->
-		<!-- Facebook Pixel Code -->
-		<script>
-			!function(f,b,e,v,n,t,s)
-			{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-			n.queue=[];t=b.createElement(e);t.async=!0;
-			t.src=v;s=b.getElementsByTagName(e)[0];
-			s.parentNode.insertBefore(t,s)}(window, document,'script',
-			'https://connect.facebook.net/en_US/fbevents.js');
-			fbq('init', '230399247836014');
-			fbq('track', 'PageView');
-		</script>
-		<noscript><img height="1" width="1" style="display:none"
-		src="https://www.facebook.com/tr?id=230399247836014&ev=PageView&noscript=1"
-		/></noscript>
-		<!-- End Facebook Pixel Code -->
 	</head>
 <body >
 <!-- Google Tag Manager (noscript) -->
@@ -80,30 +47,30 @@
 <div id="wrapper">
 		<header id="header">
 		<div class="container">
-			<div class="logo"><a href="/ru/"><img src="/images/logo.png" alt="CASHYOU"></a></div>
+			<div class="logo"><a href="/"><img src="/images/logo.png" alt="CASHYOU"></a></div>
 												<a class="btn-profile profile-opener desktop-hidden" href="#"></a>
-																		<a class="button btn-white lightbox-opener desktop-hidden btn-login" href="#enter-account">Вход в кабинет</a>
+																		<a class="button btn-white lightbox-opener desktop-hidden btn-login" href="#enter-account">Особистий кабінет </a>
 																					<div class="header-holder">
 								<a class="header-opener" href="#"></a>
 								<div class="header-slide">
 					<div class="frame">
 						<div class="header-frame">
 							<ul class="language-list">
-								<li><a href="/loan-18/">Укр</a></li>
-								<li class="active"><a href="/ru/loan-18/">Рус</a></li>
+								<li class="active"><a href="/loan-18/">Укр</a></li>
+								<li><a href="/ru/loan-18/">Рус</a></li>
 															</ul>
 							<span class="phone"><a href="tel:0800212300">0800-21-23-00</a></span>
-																																													<a class="button btn-white lightbox-opener mobile-hidden" href="#enter-account">Вход в кабинет</a>
+																																													<a class="button btn-white lightbox-opener mobile-hidden" href="#enter-account">Особистий кабінет </a>
 																																								</div>
 						<nav>
 							<ul class="main-nav">
-								<li><a href="/ru/getting/">Как получить?</a></li>
-								<li><a href="/ru/return/">Как вернуть?</a></li>
-																<li><a href="/ru/faq/">FAQ</a></li>
-																	<li><a href="/ru/blog/">Блог</a></li>
-																	
-								<li><a href="/ru/about/">О нас</a></li>
-								<li><a href="/ru/contacts/">Контакты</a></li>
+								<li><a href="/getting/">Як отримати?</a></li>
+								<li><a href="/return.html">Як повернути?</a></li>
+																<li><a href="/faq/">FAQ</a></li>
+																	<li><a href="/blog/">Блог</a></li>
+
+								<li><a href="/about.html">Про нас</a></li>
+								<li><a href="/contacts/">Контакти</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -114,11 +81,11 @@
 				<div class="popup-holder">
 			<div class="lightbox" id="enter-account"><a class="lightbox-close" href="#" data-fancybox-close><i class="icon-close"></i></a>
 				<div class="lightbox-block">
-					<span class="span-h">Вход в кабинет</span>
-					
-<form action="/ru/login/" method="post">
-	
-	<input type="text" id="username" name="_username" value="" placeholder="Логин / Электронная почта" />
+					<span class="span-h">Особистий кабінет </span>
+
+<form action="/login/" method="post">
+
+	<input type="text" id="username" name="_username" value="" placeholder="Логін (Електронна пошта)" />
 	<div class="password-block">
 		<input type="password" id="password" name="_password" placeholder="Пароль"><span class="show-password"><i class="icon-eye"></i></span>
 	</div>
@@ -126,56 +93,56 @@
 	<div class="form-row form-row-button-bottom">
 		<div class="check-holder">
 			<label for="remember">
-				<input type="checkbox" id="remember" name="_remember_me">	Запомнить
+				<input type="checkbox" id="remember" name="_remember_me">	Запам&#039;ятати
 			</label>
 		</div>
-					<a class="forgot-password lightbox-opener" href="#reset-password">Забыли пароль ?</a>
+					<a class="forgot-password lightbox-opener" href="#reset-password">Забули пароль?</a>
 			</div>
 
-	<input class="button" type="submit" value="Войти">
+	<input class="button" type="submit" value="Увійти">
 </form>				</div>
 			</div>
 
 						<div class="lightbox" id="reset-password"><a class="lightbox-close" href="#" data-fancybox-close><i class="icon-close"></i></a>
 				<div class="lightbox-block password-recovery">
-					<span class="span-h">Восстановление пароля</span>
-					
+					<span class="span-h">Відновлення пароля</span>
 
 
-<form name="forgot_password" method="post" action="/ru/password-reset/" novalidate="novalidate" class="recovery-form">
+
+<form name="forgot_password" method="post" action="/password-reset/" novalidate="novalidate" class="recovery-form">
 
 	<div class="label-block">
 			<label for="forgot_password_email" class="required">
-				E-mail
+				Email
 									<span class="req">*</span>
 							</label>
 					</div>
 	<input type="email" id="forgot_password_email" name="forgot_password[email]" required="required" />
-	
 
-	<input class="button" type="submit" value="Отправить запрос">
-<input type="hidden" id="forgot_password__token" name="forgot_password[_token]" value="wfh2miAaF7KSmQoALU34xDWL_vfq6sLCcBlpTazHvzs" /></form>
+
+	<input class="button" type="submit" value="Лишити запит">
+<input type="hidden" id="forgot_password__token" name="forgot_password[_token]" value="tnJqTltjG3v5D7ISAREu2TzcVVA43WKlE6PfvCMIMHQ" /></form>
 				</div>
 			</div>
 					</div>
-		
+
 		<div class="popup-holder">
-			
+
 			<div class="lightbox" id=""><a class="lightbox-close" href="#" data-fancybox-close><i class="icon-close"></i></a>
 				<div class="lightbox-block">
-					<h2>Для получения кредита Вы должны заполнить все поля персональной информации!</h2>
-					<a class="button" href="">Редактировать</a>
+					<h2>Для отримання кредиту Ви маєте заповнити всі поля особистої інформації!</h2>
+					<a class="button" href="">Змінити</a>
 				</div>
 			</div>
 		</div>
 
 	</header>
-	
+
 	<main>
 			<div class="container">
 		<div class="terms-hodler">
 			<div class="heading">
-				<h1> <b>Кредит с 18 лет</b></h1>
+				<h1> <b>Кредит з 18 років</b></h1>
 			</div>
 			<div class="static-content">
 				<div class="block">
@@ -211,26 +178,26 @@
 						<div class="callback-block"><a class="callback-opener" href="#"><span><i class="icon-phone"></i></span></a>
 							<div class="callback-popup"><a class="callback-close" href="#"><i class="icon-close"></i></a>
 								<form action="#">
-									<label>Оставьте телефон и мы перезвоним в рабочее время <b><br>(будние 09.00-18.00; выходные 09.00-15.00)</b> в рабочее время</label>
+									<label>Залиште телефон і ми передзвонимо у робочий час <b>(будні 09.00-18.00; вихідні 09.00-15.00)</b> в рабочее время</label>
 									<input type="tel" placeholder="" value="+380">
 									<input class="button" type="submit" value="Перезвоните">
 								</form>
 							</div>
 						</div>
-						<div class="chat-block"><a class="chat-opener" href="#">Связь с менеджером</a></div>
+						<div class="chat-block"><a class="chat-opener" href="#">Зв&#039;язок з менеджером</a></div>
 					</div>
 				</div>
 			</div>
 		</aside>
-	</div> 
+	</div>
 	</main>
 
 		<footer id="footer">
 		<div class="container">
 			<div class="seo-breadcrumbs"><span typeof="v:Breadcrumb"><a href="https://cashyou.ua/ru/" rel="v:url" property="v:title">cashyou.ua</a> › </span> <span typeof="v:Breadcrumb"><a href="https://cashyou.ua/ru/contacts/" rel="v:url" property="v:title">❶❰КРЕДИТ❷❰ОНЛАЙН❸❰УКРАИНА</a></span></div>
-			<div class="logo"><a href="/ru/"><img src="/images/logo-footer.png" alt="CASHYOU"></a></div>
+			<div class="logo"><a href="/"><img src="/images/logo-footer.png" alt="CASHYOU"></a></div>
 			<div class="footer-holder">
-				<div class="col"><strong class="conditions"><a href="/ru/confidentiality/">Условия пользования</a></strong></div>
+				<div class="col"><strong class="conditions"><a href="/confidentiality/">Умови користування</a></strong></div>
 				<div class="col">
 					<ul class="social-networks">
 						<li class="facebook"><a href="https://www.facebook.com/Cashyou-371352639870774/"> <i class="icon-facebook"></i></a></li>
@@ -241,16 +208,16 @@
 			</div><a class="btn-top" href="#">Назад</a>
 		</div>
 		<ul class="tags">
-			<li><a href="/ru/credit-without-reject/">кредит без отказа</a></li>
-			<li><a href="/ru/credit-365/">кредит-365</a></li>
-			<li><a href="/ru/credit-bad-history/">кредит с плохой историей</a></li>
-			<li><a href="/ru/interest-rate/">процентная ставка</a></li>
-			<li><a href="/ru/loan-18/">кредит с 18 лет</a></li>
-						<li><a href="/ru/credit-on-card/">кредит на карту срочно</a></li>
-			<li><a href="/ru/credit-unemployed/">кредит безработным</a></li>
-									<li><a href="/ru/credit-without-income-statement/">взять кредит без справки о доходах</a></li>
-															<li><a href="/ru/credit-calculation/">расчет кредита</a></li>
-					</ul>	
+			<li><a href="/credit-without-reject/">кредит без відмови</a></li>
+			<li><a href="/credit-365/">кредит-365</a></li>
+			<li><a href="/credit-bad-history/">кредит з поганою історією</a></li>
+			<li><a href="/interest-rate/">відсоткова ставка</a></li>
+			<li><a href="/loan-18/">кредит з 18 років</a></li>
+						<li><a href="/credit-on-card/">кредит на карту терміново</a></li>
+			<li><a href="/credit-unemployed/">кредит безробітним</a></li>
+									<li><a href="/credit-without-income-statement/">взяти кредит без справки про дохідність</a></li>
+															<li><a href="/credit-calculation/">розрахунок кредита</a></li>
+					</ul>
 	</footer>
 	<div class="footer-icons-payment">
 		<img src="/images/visa-card.png" alt="">
