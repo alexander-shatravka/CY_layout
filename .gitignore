@@ -10,6 +10,9 @@ node_modules/
 # PHPStorm
 .idea/
 
+# vscode
+.vscode/
+
 # Mercurial
 .hg
 
