@@ -1,5 +1,4 @@
-<?php echo $_SERVER['REQUEST_URI']?>
-<?php include 'header.php'?>
+<?php include 'header.php' ?>
 <main>
     <section class="intro-section">
         <div class="holder">
@@ -71,7 +70,7 @@
                            class="button btn-get">
                             Заповнити анкету
                         </a>
-                        </div>
+                    </div>
                     <input type="hidden" id="loan_application_amount" name="loan_application[amount]"/>
                     <input type="hidden" id="loan_application_term" name="loan_application[term]"/>
                     <input type="hidden" id="loan_application_product" name="loan_application[product]"
@@ -84,10 +83,10 @@
             <div class="info-col">
                 <div class="info-block" style="background-image: url(/images/img-intro3.jpg);"><a
                             class="btn-get-info"
-                            href="/blog/urgent-money"><span>Терміново потрібні<b>Гроші на карту?</b></span><span
+                            href="/blog/urgent-money.html"><span>Терміново потрібні<b>Гроші на карту?</b></span><span
                                 class="over-box">Детальніше</span></a></div>
                 <div class="info-block" style="background-image: url(/images/article-fast-credit-online.jpg);"><a
-                            class="btn-get-info" href="/blog/fast-credit-online"><span>Швидкий кредит <br> <b>онлайн</b></span><span
+                            class="btn-get-info" href="/blog/fast-credit-online.html"><span>Швидкий кредит <br> <b>онлайн</b></span><span
                                 class="over-box">Детальніше</span></a></div>
             </div>
         </div>
@@ -127,7 +126,7 @@
             </div>
             <div class="note-block"><span>Усі операції доступні
                                                 <mark>Виключно з 18 років !</mark></span></div>
-            <div class="button-block"><a class="button" href="/getting/">Детальніше</a></div>
+            <div class="button-block"><a class="button" href="/getting">Детальніше</a></div>
         </div>
     </section>
     <section class="content-section info-section">
@@ -189,7 +188,7 @@
                     </div>
                 </div>
             </div>
-            <div class="button-block"><a class="button btn-white" href="/bonus-system-rools.html">Дізнатись більше</a>
+            <div class="button-block"><a class="button btn-white" href="/bonus-system-rools">Дізнатись більше</a>
             </div>
         </div>
     </section>
@@ -253,7 +252,7 @@
             <mark>відсотки </mark>за допомогою
             <mark>бонусних балів !</mark>
                         </span></div>
-            <div class="button-block"><a class="button" href="/return.html">Детальніше</a></div>
+            <div class="button-block"><a class="button" href="/return">Детальніше</a></div>
         </div>
     </section>
     <section class="content-section about-section">
@@ -266,7 +265,7 @@
                 час та у будь-якому місці. Наш сервіс повністю автоматизований і процес отримання кредиту займає не
                 більше 5 хвилин. Наша мета - забезпечення фінансового комфорту наших клієнтів!
             </div>
-            <div class="button-block"><a class="button" href="/about.html">Дізнатись більше</a></div>
+            <div class="button-block"><a class="button" href="/about">Дізнатись більше</a></div>
         </div>
     </section>
     <section class="content-section credit-info">
@@ -631,5 +630,5 @@
     </div>
 </main>
 
-<?php include 'footer.php'?>
+<?php include 'footer.php' ?>
 

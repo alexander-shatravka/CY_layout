@@ -6,7 +6,7 @@
         </div>
         <div class="logo"><a href="/"><img src="/images/logo-footer.png" alt="CASHYOU"></a></div>
         <div class="footer-holder">
-            <div class="col"><strong class="conditions"><a href="/confidentiality.html">Умови користування</a></strong>
+            <div class="col"><strong class="conditions"><a href="/confidentiality">Умови користування</a></strong>
             </div>
             <div class="col">
                 <ul class="social-networks">

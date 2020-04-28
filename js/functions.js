@@ -28,7 +28,7 @@ $(document).ready(function() {
 	// initClickSync();
 	// recalculateBonusesBar();
 	// initSubmitLink();
-	// initAccordion();
+	initAccordion();
 	// initAjaxForm();
 	// initInlineFormEditing();
 	// initShowIfValue();

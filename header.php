@@ -1,10 +1,75 @@
+<?php
+    $path = $_SERVER['REQUEST_URI'];
+    $title = '';
+    $description = '';
+
+    switch ($path) {
+        case "/":
+            $title = 'Кредит онлайн на картку Україна, взяти гроші в позику онлайн на банківську карту visa через інтернет, грошовий мікрокредит Cashyou';
+            $description = 'Шукаєте де оформити кредит онлайн на банківську карту? Онлайн позики через інтернет від Cashyou. Проста форма отримання кредиту.';
+            break;
+        case "/contacts":
+            $title = 'Контакты Cashyou. Телефоны компании Cashyou';
+            $description = 'Шукаєте де оформити кредит онлайн на банківську карту? Онлайн позики через інтернет від Cashyou. Проста форма отримання кредиту.';
+            break;
+        case "/about":
+            $title = 'Компания Cashyou. Что такое Cashyou. Сервис Cashyou';
+            $description = 'Что такое сервис Cashyou. Какая у сервиса филососфия и история. Вся необходимая финансовая информация для обращения или погашения кредита.';
+            break;
+        case "/blog":
+            $title = 'Финансовые статьи и актуальные новости от Cashyou';
+            $description = 'Громкие новости финансового мира и  акутальные известия о системе. Все последние изменения и события в Cashyou и финансовом мире.';
+            break;
+        case "/faq":
+            $title = 'Как пользоваться системой Cashyou. Ответы на часто задаваемые вопросы';
+            $description = 'Как взять кредит или вернуть деньги. Пользование бонусами и правила оформления пролонгации. Крупнейшая база знаний сервиса Cashyou.';
+            break;
+        case "/return":
+            $title = 'Как вернуть кердит. Как вернуть кредит в Cashyou';
+            $description = 'Вернуть деньги вы сможете любым удобным для вас способом. Через Ваш личный кабинет, бонусами или переводом на наши банковские реквизиты.';
+            break;
+        case "/getting":
+            $title = 'Как получить кредит. Как взять кредит в Cashyou';
+            $description = 'Получить кредит онлайн на карту с минимальным набором документов. Для получения денег вам потребуются только ваш телефон, паспрот и ИНН. Выдача в течение 5 минут';
+            break;
+        case "/confidentiality":
+            $title = 'Кредит онлайн на картку Україна, взяти гроші в позику онлайн на банківську карту visa через інтернет, грошовий мікрокредит Cashyou';
+            $description = 'Шукаєте де оформити кредит онлайн на банківську карту? Онлайн позики через інтернет від Cashyou. Проста форма отримання кредиту.';
+            break;
+        case "/creditrules":
+            $title = 'Кредит онлайн на картку Україна, взяти гроші в позику онлайн на банківську карту visa через інтернет, грошовий мікрокредит Cashyou';
+            $description = 'Шукаєте де оформити кредит онлайн на банківську карту? Онлайн позики через інтернет від Cashyou. Проста форма отримання кредиту.';
+            break;
+        case "/agreementpersonaldata":
+            $title = 'Кредит онлайн на картку Україна, взяти гроші в позику онлайн на банківську карту visa через інтернет, грошовий мікрокредит Cashyou';
+            $description = 'Шукаєте де оформити кредит онлайн на банківську карту? Онлайн позики через інтернет від Cashyou. Проста форма отримання кредиту.';
+            break;
+        case "/registrationcertificate":
+            $title = 'Кредит онлайн на картку Україна, взяти гроші в позику онлайн на банківську карту visa через інтернет, грошовий мікрокредит Cashyou';
+            $description = 'Шукаєте де оформити кредит онлайн на банківську карту? Онлайн позики через інтернет від Cashyou. Проста форма отримання кредиту.';
+            break;
+        case "/public":
+            $title = 'Кредит онлайн на картку Україна, взяти гроші в позику онлайн на банківську карту visa через інтернет, грошовий мікрокредит Cashyou';
+            $description = 'Шукаєте де оформити кредит онлайн на банківську карту? Онлайн позики через інтернет від Cashyou. Проста форма отримання кредиту.';
+            break;
+        case "/bonus-system-rools":
+            $title = 'Бонусы Cashyou. Как пользоваться бонусами в Cashyou';
+            $description = 'За бонусы в системе Cashyou вы можете увеличивать сумму взятого кредита или уменьшить проценты по следующему кредиту. Также за бонусы вы моежете гасить кредит.';
+            break;
+        default:
+            $title = 'Кредит онлайн на картку Україна, взяти гроші в позику онлайн на банківську карту visa через інтернет, грошовий мікрокредит Cashyou';
+            $description = 'Шукаєте де оформити кредит онлайн на банківську карту? Онлайн позики через інтернет від Cashyou. Проста форма отримання кредиту.';
+            break;
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <meta charset="utf-8">
-    <title>Кредит онлайн на картку Україна, взяти гроші в позику онлайн на банківську карту visa через інтернет,
-        грошовий мікрокредит Cashyou</title>
+    <title><?php echo $title?></title>
     <meta name="description"
           content="Шукаєте де оформити кредит онлайн на банківську карту? Онлайн позики через інтернет від Cashyou. Проста форма отримання кредиту.">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/apple-touch-icon-57x57.png"/>
@@ -56,7 +121,7 @@
         <div class="container">
             <div class="logo"><a href="/"><img src="/images/logo.png" alt="CASHYOU"></a></div>
             <a class="btn-profile profile-opener desktop-hidden" href="#"></a>
-            <a class="button btn-white lightbox-opener desktop-hidden btn-login" href="#enter-account">Особистий
+            <a class="button btn-white lightbox-opener desktop-hidden btn-login" href="http://test.cashyou.ua">Особистий
                 кабінет </a>
             <div class="header-holder">
                 <a class="header-opener" href="#"></a>
@@ -67,17 +132,17 @@
                                 <li class="active"><a href="/">Укр</a></li>
                                 <li><a href="/ru/">Рус</a></li>
                             </ul>
-                            <a class="button btn-white mobile-hidden" href="https://test.cashyou.ua/">Особистий кабінет</a>
+                            <a class="button btn-white mobile-hidden" href="https://test.cashyou.ua/">Особистий
+                                кабінет</a>
                         </div>
                         <nav>
                             <ul class="main-nav">
-                                <li><a href="/getting.html">Як отримати?</a></li>
-                                <li><a href="/return.html">Як повернути?</a></li>
-                                <li><a href="/faq.html">FAQ</a></li>
+                                <li><a href="/getting">Як отримати?</a></li>
+                                <li><a href="/return">Як повернути?</a></li>
+                                <li><a href="/faq">FAQ</a></li>
                                 <li><a href="/blog.html">Блог</a></li>
-
-                                <li><a href="/about.html">Про нас</a></li>
-                                <li><a href="/contacts.html">Контакти</a></li>
+                                <li><a href="/about">Про нас</a></li>
+                                <li><a href="/contacts">Контакти</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -87,7 +152,7 @@
 
         <div class="popup-holder">
             <div class="lightbox" id="enter-account"><a class="lightbox-close" href="#" data-fancybox-close><i
-                        class="icon-close"></i></a>
+                            class="icon-close"></i></a>
                 <div class="lightbox-block">
                     <span class="span-h">Особистий кабінет </span>
 
@@ -97,7 +162,7 @@
                                placeholder="Логін (Електронна пошта)"/>
                         <div class="password-block">
                             <input type="password" id="password" name="_password" placeholder="Пароль"><span
-                                class="show-password"><i class="icon-eye"></i></span>
+                                    class="show-password"><i class="icon-eye"></i></span>
                         </div>
 
                         <div class="form-row form-row-button-bottom">
@@ -115,7 +180,7 @@
             </div>
 
             <div class="lightbox" id="reset-password"><a class="lightbox-close" href="#" data-fancybox-close><i
-                        class="icon-close"></i></a>
+                            class="icon-close"></i></a>
                 <div class="lightbox-block password-recovery">
                     <span class="span-h">Відновлення пароля</span>
 
