@@ -281,6 +281,7 @@
 
 		@include media("<desktop") {
 			padding: 0 24px;
+			transform: translateY(70px);
 		}
 
 		@include media("<tablet") {
