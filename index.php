@@ -576,36 +576,36 @@
                 грошей на карту проводиться в таких містах:
             </div>
             <ul class="tags cities">
-                <li><a href="/cities/city-belaya-cerkov.html">Біла Церква</a></li>
-                <li><a href="/cities/city-berdyansk.html">Бердянськ</a></li>
-                <li><a href="/cities/city-brovary.html">Бровари</a></li>
-                <li><a href="/cities/city-vinnica.html">Вінниця</a></li>
-                <li><a href="/cities/city-dnepr.html">Дніпро</a></li>
-                <li><a href="/cities/city-zhitomir.html">Житомир</a></li>
-                <li><a href="/cities/city-zaporozhie.html">Запоріжжя</a></li>
-                <li><a href="/cities/city-ivano-frankovsk.html">Івано-Франківськ</a></li>
-                <li><a href="/cities/city-kamyanets-podolskiy.html">Кам&#039;янець-Подільский</a></li>
-                <li><a href="/cities/city-kamenskoe.html">Кам&#039;янське</a></li>
-                <li><a href="/cities/city-kremenchug.html">Кременчуг</a></li>
-                <li><a href="/cities/city-krivoy-rog.html">Кривий Ріг</a></li>
-                <li><a href="/cities/city-lutsk.html">Луцьк</a></li>
-                <li><a href="/cities/city-lvov.html">Львів</a></li>
-                <li><a href="/cities/city-melitopol.html">Мелітополь</a></li>
-                <li><a href="/cities/city-nikolayev.html">Миколаїв</a></li>
-                <li><a href="/cities/city-nikopol.html">Нікополь</a></li>
-                <li><a href="/cities/city-odessa.html">Одеса</a></li>
-                <li><a href="/cities/city-pavlograd.html">Павлоград</a></li>
-                <li><a href="/cities/city-poltava.html">Полтава</a></li>
-                <li><a href="/cities/city-rovno.html">Рівне</a></li>
-                <li><a href="/cities/city-sumy.html">Суми</a></li>
-                <li><a href="/cities/city-ternopol.html">Тернопіль</a></li>
-                <li><a href="/cities/city-uzhgorod.html">Ужгород</a></li>
-                <li><a href="/cities/city-kharkov.html">Харків</a></li>
-                <li><a href="/cities/city-kherson.html">Херсон</a></li>
-                <li><a href="/cities/city-khmelnitskiy.html">Хмельницький</a></li>
-                <li><a href="/cities/city-cherkassy.html">Черкаси</a></li>
-                <li><a href="/cities/city-chernigov.html">Чернігів</a></li>
-                <li><a href="/cities/city-chernovtsy.html">Чернівці</a></li>
+                <li><a href="/city/belaya-cerkov">Біла Церква</a></li>
+                <li><a href="/city/berdyansk">Бердянськ</a></li>
+                <li><a href="/city/brovary">Бровари</a></li>
+                <li><a href="/city/vinnica">Вінниця</a></li>
+                <li><a href="/city/dnepr">Дніпро</a></li>
+                <li><a href="/city/zhitomir">Житомир</a></li>
+                <li><a href="/city/zaporozhie">Запоріжжя</a></li>
+                <li><a href="/city/ivano-frankovsk">Івано-Франківськ</a></li>
+                <li><a href="/city/kamyanets-podolskiy">Кам&#039;янець-Подільский</a></li>
+                <li><a href="/city/kamenskoe">Кам&#039;янське</a></li>
+                <li><a href="/city/kremenchug">Кременчуг</a></li>
+                <li><a href="/city/krivoy-rog">Кривий Ріг</a></li>
+                <li><a href="/city/lutsk">Луцьк</a></li>
+                <li><a href="/city/lvov">Львів</a></li>
+                <li><a href="/city/melitopol">Мелітополь</a></li>
+                <li><a href="/city/nikolayev">Миколаїв</a></li>
+                <li><a href="/city/nikopol">Нікополь</a></li>
+                <li><a href="/city/odessa">Одеса</a></li>
+                <li><a href="/city/pavlograd">Павлоград</a></li>
+                <li><a href="/city/poltava">Полтава</a></li>
+                <li><a href="/city/rovno">Рівне</a></li>
+                <li><a href="/city/sumy">Суми</a></li>
+                <li><a href="/city/ternopol">Тернопіль</a></li>
+                <li><a href="/city/uzhgorod">Ужгород</a></li>
+                <li><a href="/city/kharkov">Харків</a></li>
+                <li><a href="/city/kherson">Херсон</a></li>
+                <li><a href="/city/khmelnitskiy">Хмельницький</a></li>
+                <li><a href="/city/cherkassy">Черкаси</a></li>
+                <li><a href="/city/chernigov">Чернігів</a></li>
+                <li><a href="/city/chernovtsy">Чернівці</a></li>
             </ul>
         </div>
     </section>

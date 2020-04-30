@@ -62,6 +62,13 @@
             break;
     }
 
+    function active($currect_page){
+      $url_array =  explode('/', $_SERVER['REQUEST_URI']) ;
+      $url = $url_array[1];
+      if($currect_page == $url){
+          echo 'active';
+      }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -71,7 +78,7 @@
     <meta charset="utf-8">
     <title><?php echo $title?></title>
     <meta name="description"
-          content="Шукаєте де оформити кредит онлайн на банківську карту? Онлайн позики через інтернет від Cashyou. Проста форма отримання кредиту.">
+          content="<?php echo $description?>">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/apple-touch-icon-57x57.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72.png"/>
@@ -110,12 +117,6 @@
 
 </head>
 <body class="home">
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVRBQ84"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
 <div id="wrapper">
     <header id="header">
         <div class="container">
@@ -137,12 +138,12 @@
                         </div>
                         <nav>
                             <ul class="main-nav">
-                                <li><a href="/getting">Як отримати?</a></li>
-                                <li><a href="/return">Як повернути?</a></li>
-                                <li><a href="/faq">FAQ</a></li>
-                                <li><a href="/blog.html">Блог</a></li>
-                                <li><a href="/about">Про нас</a></li>
-                                <li><a href="/contacts">Контакти</a></li>
+                                <li class="<?php active('getting')?>"><a href="/getting">Як отримати?</a></li>
+                                <li class="<?php active('return')?>"><a href="/return">Як повернути?</a></li>
+                                <li class="<?php active('faq')?>"><a href="/faq">FAQ</a></li>
+                                <li class="<?php active('articles') || active('blog')?>"><a href="/blog">Блог</a></li>
+                                <li class="<?php active('about')?>"><a href="/about">Про нас</a></li>
+                                <li class="<?php active('contacts')?>"><a href="/contacts">Контакти</a></li>
                             </ul>
                         </nav>
                     </div>
